@@ -1,0 +1,75 @@
+/* Slide.module.css */
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, #ff5858, #f857a6);
+    overflow: hidden;
+  }
+  
+  .dark {
+    background: black;
+  }
+  
+  .slideImg {
+    position: absolute;
+    width: 250px;
+    height: 150vh;
+  }
+  
+  .slideImg1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-20deg);
+  }
+  
+  .slideImg2 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(20deg);
+  }
+  
+  .slideContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .slideContent h1 {
+    font-size: 12vw;
+    text-transform: uppercase;
+    color: white;
+  }
+  
+  .dark .slideContent h1 {
+    color: #dbdbdb;
+  }
+  
+  .pagination {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  
+  .line {
+    width: 90px;
+    height: 1px;
+    background-color: white;
+    margin: 0 16px;
+  }
+  
+  .description {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  
