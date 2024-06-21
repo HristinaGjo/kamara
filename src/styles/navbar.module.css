@@ -1,0 +1,42 @@
+.navbarCtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 50px; 
+  padding: 2em 1em;
+  position: fixed;
+  top: 0;
+}
+
+
+.leftNavbar{
+  left: 0;
+  border-right: 1px solid white;
+}
+
+.rightNavbar{
+  right: 0;
+  border-left: 1px solid white;
+}
+
+.navLinks, .navLinksRight{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  writing-mode: vertical-lr;
+  gap: 2em;
+  text-orientation: mixed;
+}
+
+.navLinks {
+  transform: rotate(180deg);
+}
+
+.navLinksRight{
+  transform: rotate(360deg);
+}
+
+
+
