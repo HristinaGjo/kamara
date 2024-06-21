@@ -1,22 +1,38 @@
-.titleItems{
+
+/*.titleItems{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     gap: 1em;
-    margin-left: 10em;
-    margin-top: 10em;
+    overflow-y: hidden;
+    margin-left: 4em;
+    /*margin-left: 10em;
+    margin-top: 7em;
+} */
+
+.titleItems{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 4em;
+    padding-top: 20em;
+    height: 100%;
+    /* color:rgb(208, 205, 181);*/
+    color: rgb(199, 199, 199);
 }
 
 .titleItem{
     text-align: left;
+    text-transform: uppercase;
 }
 
 h1{
     font-size: 5rem;
     letter-spacing: 5px;
     line-height: 0.5;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .titleLink{
@@ -31,5 +47,85 @@ h1{
     opacity: 1!important;
 }
 
+.backgroundImage{
+    background-image: url("https://images.pexels.com/photos/4904563/pexels-photo-4904563.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-position: center 40%;
+    background-size: 100vw;
+    left: 0;
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 800ms ease,
+    background-size 800ms ease,
+    background-position 800ms ease;
+    width: 100%;
+    z-index: -2;
+}
+
+/* Change background positions based on the active index */
+
+.titleItems[data-active-index="0"] .backgroundImage {
+    background-position:center 45%;
+}
+
+.titleItems[data-active-index="1"] .backgroundImage {
+    background-position:center 55%;
+}
+
+.titleItems[data-active-index="2"] .backgroundImage {
+    background-position:center 65%;
+}
+
+.titleItems[data-active-index="3"] .backgroundImage {
+    background-position:center 75%;
+}
+
+/* Background size and opacity changes on hover */
+.titleItems:hover .backgroundImage{
+    background-size: 95vw;
+    opacity: 0.3;
+}
+
+
+@media (max-width: 768px) {
+
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    .titleItems {
+      height: 100%;
+      padding-left: 2em;
+      padding-top: 25em;
+      /* display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start; */
+    }
+ 
+  }
+
+  /*.backgroundImage {
+    background-size: cover;
+    background-position: center;
+  } */
+
+/*.titleItems[data-active-index="0"] {
+    background-position: 0% -25%;
+}
+
+.titleItems[data-active-index="1"] {
+    background-position: 0% -50%;
+}
+
+.titleItems[data-active-index="2"] {
+    background-position: 0% -75%;
+}
+
+.titleItems[data-active-index="3"] {
+    background-position: 0% -100%;
+} */
 
 

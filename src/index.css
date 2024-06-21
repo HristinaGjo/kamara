@@ -3,6 +3,8 @@
   font-family: 'DINRoundPro-Medi', sans-serif;
   line-height: 1;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -14,11 +16,13 @@
   -moz-osx-font-smoothing: grayscale;
 
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body{
   margin: 0;
   padding: 0;
+  min-height: 100vh;
 }
 
 /* a {
@@ -74,3 +78,5 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+
+
