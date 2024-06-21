@@ -83,6 +83,12 @@ h1{
   
     .titleItems {
       padding-left: 2em;
+
+    }
+
+    .backgroundImage{
+        height: 100vh;
+        background-size: cover;
     }
  
   }
