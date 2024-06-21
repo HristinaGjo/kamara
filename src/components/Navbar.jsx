@@ -6,7 +6,7 @@ const Navbar = () => {
         <>
         <div className={`${classes.navbarCtn} ${classes.leftNavbar}`}>
             <div className={classes.navLinks}>
-            <span>kamara</span>
+            <span>kamára</span>
                 <span>about</span>
                 <span>contact</span>
             </div>
@@ -14,8 +14,7 @@ const Navbar = () => {
         <div className={`${classes.navbarCtn} ${classes.rightNavbar}`}>
         <div className={classes.navLinksRight}>
             <span>instagram</span>
-                <span>facebook</span>
-                <span>contact</span>
+                <span>&copy; 2024 kamára</span>
             </div>
         </div>
         </>

@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   height: 100vh;
   width: 50px; 
   padding: 2em 1em;
@@ -23,11 +23,13 @@
 
 .navLinks, .navLinksRight{
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: end;
   align-items: center;
   writing-mode: vertical-lr;
   gap: 2em;
   text-orientation: mixed;
+  margin-bottom: 4em;
 }
 
 .navLinks {
