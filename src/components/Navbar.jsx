@@ -4,19 +4,15 @@ import classes from "../styles/navbar.module.css"
 const Navbar = () => {
     return ( 
         <>
-        <div className={`${classes.navbarCtn} ${classes.leftNavbar}`}>
-            <div className={classes.navLinks}>
+        <div className={classes.navbarCtn}>
+            <div className={classes.logo}>
             <span>kamára</span>
+            </div>
+            <div className={classes.navbarRight}>
                 <span>about</span>
                 <span>contact</span>
             </div>
-        </div>
-        <div className={`${classes.navbarCtn} ${classes.rightNavbar}`}>
-        <div className={classes.navLinksRight}>
-            <span>instagram</span>
-                <span>&copy; 2024 kamára</span>
             </div>
-        </div>
         </>
      );
 }

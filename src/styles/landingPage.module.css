@@ -2,20 +2,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     gap: 1em;
-    height: 100vh;
-    width: 100vw;
+    margin-left: 10em;
+    margin-top: 10em;
 }
 
 .titleItem{
-    text-transform: uppercase;
     text-align: left;
 }
 
 h1{
     font-size: 5rem;
-    letter-spacing: 15px;
+    letter-spacing: 5px;
+    line-height: 0.5;
+    font-weight: 400;
 }
 
 .titleLink{
