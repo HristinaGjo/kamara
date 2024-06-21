@@ -57,15 +57,15 @@ h1{
 }
 
 .titleItems[data-active-index="1"] .backgroundImage {
-    background-position:center 55%;
+    background-position:center 60%;
 }
 
 .titleItems[data-active-index="2"] .backgroundImage {
-    background-position:center 65%;
+    background-position:center 70%;
 }
 
 .titleItems[data-active-index="3"] .backgroundImage {
-    background-position:center 75%;
+    background-position:center 80%;
 }
 
 /* Background size and opacity changes on hover */
@@ -82,13 +82,7 @@ h1{
     }
   
     .titleItems {
-      height: 100%;
       padding-left: 2em;
-      padding-top: 25em;
-      /* display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: start; */
     }
  
   }
