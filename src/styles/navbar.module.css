@@ -3,7 +3,7 @@
   top: 0;
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  padding: 2em 4em;
+  padding: 2em 4em 0;
   box-sizing: border-box;
   z-index: 1;
 }
