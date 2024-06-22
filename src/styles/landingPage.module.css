@@ -1,11 +1,20 @@
+.pageCtn{
+    box-sizing: border-box;
+    padding: 0em 4em 0 4em ;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+
 .titleItems{
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: start;
-    padding-left: 4em;
-    height: 91vh;
+    height: 90vh;
     gap: 2em;
+    width: 100%;
 }
 
 .titleItem{
@@ -75,16 +84,32 @@ h1{
 }
 
 
+
+.footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.rightCtnFooter{
+    text-align: right;
+}
+
+
 @media (max-width: 768px) {
+
+    .pageCtn{
+        box-sizing: border-box;
+        padding: 0em 2em 0 2em ;
+        width: 100%;
+        height: 100%;
+        overflow-y: hidden;
+    }
 
     h1 {
       font-size: 2.5rem;
     }
-  
-    .titleItems {
-      padding-left: 2em;
 
-    }
 
     .backgroundImage{
         height: 100vh;
