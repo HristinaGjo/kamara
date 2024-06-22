@@ -1,19 +1,25 @@
 import React, { useState } from "react";
 import classes from "../styles/landingPage.module.css"
 import Footer from "../components/Footer";
+import { useNavigate } from "react-router-dom";
 
 
 const LandingPage = () => {
 
   const [activeIndex, setActiveIndex] = useState(null);
+  const navigate = useNavigate();
+
 
   const handleMouseOver = (index) => {
     setActiveIndex(index)
   };
 
-  const handleClick = (index) => {
-    setActiveIndex(index)
+  const handleClick = (title) => {
+    setActiveIndex (null);
+    const route = title.toLowerCase()
+    navigate(`${route}`)
   }
+
 
   const titles = [
     {title:"Echoes", className:classes.titleLink},
@@ -32,7 +38,7 @@ const LandingPage = () => {
         key={index}
         className={item.className}
         onMouseOver={() => handleMouseOver(index)}
-        onClick={() => handleClick(index)}
+        onClick={() => handleClick(item.title)}
         > 
         <h1>{item.title}</h1>
         </div>

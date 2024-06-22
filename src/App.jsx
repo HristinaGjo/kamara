@@ -1,6 +1,10 @@
 import React from 'react'
 import LandingPage from './pages/LandingPage'
 import Navbar from './components/Navbar'
+import About from './pages/About'
+import Echoes from './pages/Echoes'
+import { Routes, Route } from 'react-router-dom'
+
 
 function App() {
 
@@ -8,7 +12,13 @@ function App() {
   return (
     <>
     <Navbar/>
-    <LandingPage/>
+
+    <Routes>
+    <Route path="/" element={<LandingPage />}/>
+    <Route path="/about" element={<About />}/>
+    <Route path="/echoes" element={<Echoes />}/>
+    </Routes>
+
     </>
   )
 }
