@@ -118,6 +118,10 @@ h1{
         transition: none; 
     }
 
+    .footer{
+       padding-bottom: 2em;
+    }
+
   }
 
   /*.backgroundImage {
