@@ -52,7 +52,7 @@ const LandingPage = () => {
       <span>photographer</span>
       </div>
       <div className={classes.rightCtnFooter}>
-      <span>&copy;2024</span>
+      <span>kamára &copy;2024</span>
       </div>
     </div>
     </div>

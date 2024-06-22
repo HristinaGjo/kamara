@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: end;
     align-items: start;
-    height: 90vh;
+    height: 92vh;
     gap: 2em;
     width: 100%;
 }
@@ -83,8 +83,6 @@ h1{
     opacity: 0.3;
 }
 
-
-
 .footer{
     width: 100%;
     display: grid;
@@ -110,13 +108,16 @@ h1{
       font-size: 2.5rem;
     }
 
-
-    .backgroundImage{
-        height: 100vh;
+    .backgroundImage {
         background-size: cover;
         background-repeat: no-repeat;
+        transition: none; 
     }
- 
+
+    .titleLink {
+        transition: none; 
+    }
+
   }
 
   /*.backgroundImage {
