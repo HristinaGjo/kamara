@@ -1,134 +1,160 @@
-.pageCtn{
+.pageCtn {
     box-sizing: border-box;
-    padding: 0em 4em 0 4em ;
-    width: 100%;
-    height: 100%;
-    overflow-y: hidden;
-}
-
-
-.titleItems{
+    padding: 0 4em;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  .titleItems {
     display: flex;
     flex-direction: column;
     justify-content: end;
+    margin-bottom: 2em;
     align-items: start;
-    height: 92vh;
+    height: 100%;
     gap: 2em;
     width: 100%;
-}
-
-.titleItem{
+  }
+  
+  .titleItem {
     text-align: left;
     text-transform: uppercase;
-}
-
-h1{
+  }
+  
+  h1 {
     font-size: 5rem;
     letter-spacing: 5px;
     line-height: 0.5;
     font-weight: 300;
-    margin: 0.2;
-}
-
-.titleLink{
+    margin: 0.5;
+  }
+  
+  .titleLink {
     transition: opacity 0.3s;
-}
-
-.titleItem:hover .titleLink{
+  }
+  
+  .titleItem:hover .titleLink {
     opacity: 0.3;
-}
-
-.titleLink:hover{
-    opacity: 1!important;
-}
-
-.backgroundImage{
+  }
+  
+  .titleLink:hover {
+    opacity: 1 !important;
+  }
+  
+  .backgroundImage {
     background-image: url("https://images.pexels.com/photos/4904563/pexels-photo-4904563.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     background-position: center 40%;
     background-size: cover;
-    background-attachment: fixed;
     left: 0;
-    width: 100%;
     height: 100vh;
     opacity: 0.5;
     position: absolute;
     top: 0;
-    left: 0;
     transition: opacity 800ms ease,
     background-size 800ms ease,
     background-position 800ms ease;
-    width: 100%;
+    width: 100vw;
     z-index: -2;
-}
-
-/* Change background positions based on the active index */
-
-.titleItems[data-active-index="0"] .backgroundImage {
-    background-position:center 45%;
-}
-
-.titleItems[data-active-index="1"] .backgroundImage {
-    background-position:center 60%;
-}
-
-.titleItems[data-active-index="2"] .backgroundImage {
-    background-position:center 70%;
-}
-
-.titleItems[data-active-index="3"] .backgroundImage {
-    background-position:center 80%;
-}
-
-/* Background size and opacity changes on hover */
-.titleItems:hover .backgroundImage{
+  }
+  
+  /* Change background positions based on the active index */
+  .titleItems[data-active-index="0"] .backgroundImage {
+    background-position: center 50%;
+  }
+  
+  .titleItems[data-active-index="1"] .backgroundImage {
+    background-position: center 60%;
+  }
+  
+  .titleItems[data-active-index="2"] .backgroundImage {
+    background-position: center 75%;
+  }
+  
+  .titleItems[data-active-index="3"] .backgroundImage {
+    background-position: center 90%;
+  }
+  
+  /* Background size and opacity changes on hover */
+  .titleItems:hover .backgroundImage {
     background-size: 95vw;
     opacity: 0.3;
-}
-
-.footer{
+  }
+  
+  .footer {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-}
-
-.rightCtnFooter{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4em;
+    box-sizing: border-box;
+  }
+  
+  .leftCtnFooter, .rightCtnFooter {
+    padding: 1em 0;
+  }
+  
+  .rightCtnFooter {
     text-align: right;
-}
-
-
-@media (max-width: 768px) {
-
-    .pageCtn{
-        box-sizing: border-box;
-        padding: 0em 2em 0 2em ;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
+  }
+  
+  /* Media queries for mobile screens */
+  @media (max-width: 768px) {
+    .pageCtn {
+      padding: 0 2em;
     }
-
+  
     h1 {
       font-size: 2.5rem;
     }
-
-
+  
     .backgroundImage {
-        background-image: url("https://images.pexels.com/photos/4904563/pexels-photo-4904563.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed; /* Adjust attachment as needed */
-        height: 100vh; /* Adjust height for mobile */
-        transition: none !important; /* Remove all transitions for mobile */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      height: 100vh;
+      transition: none !important;
     }
-   
+  
     .titleLink {
-        transition: none !important; 
+      transition: none !important;
+    }
+  
+    .footer {
+      padding: 1em 2em;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .leftCtnFooter, .rightCtnFooter {
+      padding: 0.5em 0;
+      font-size: 0.875rem;
     }
 
-    .footer{
-       padding-bottom: 2em;
-    }
 
+  .titleItems[data-active-index="0"] .backgroundImage {
+    background-size: cover;
   }
+  
+  .titleItems[data-active-index="1"] .backgroundImage {
+    background-size: cover;
+  }
+  
+  .titleItems[data-active-index="2"] .backgroundImage {
+    background-size: cover;
+  }
+  
+  .titleItems[data-active-index="3"] .backgroundImage {
+    background-size: cover;
+  }
+  }
+
+
 
  /* @media not all and (hover: none) {
     .titleItem:hover .titleLink {

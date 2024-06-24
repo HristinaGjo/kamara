@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import About from './pages/About'
 import Echoes from './pages/Echoes'
 import { Routes, Route } from 'react-router-dom'
+import Footer from './components/Footer.jsx'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     <Route path="/about" element={<About />}/>
     <Route path="/echoes" element={<Echoes />}/>
     </Routes>
+
 
     </>
   )
