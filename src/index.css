@@ -16,7 +16,6 @@
   -moz-osx-font-smoothing: grayscale;
 
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 html, body{
@@ -37,6 +36,8 @@ span {
 
 h1{
   color: aliceblue;
+  margin: 0;
+  padding: 0;
 }
 
 

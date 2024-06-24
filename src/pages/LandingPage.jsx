@@ -43,23 +43,14 @@ const LandingPage = () => {
         onMouseOver={() => handleMouseOver(index)}
         onClick={() => handleClick(item.title)}
         > 
-        <h1>{item.title}</h1>
+        <p>{item.title}</p>
         </div>
       ))}
     </div>
     <div className={classes.backgroundPattern}></div>
     <div className={classes.backgroundImage}></div>
-
-  
     </div>
-    <div className={classes.footer}>
-    <div className={classes.leftCtnFooter}>
-      <span>photographer</span>
-      </div>
-      <div className={classes.rightCtnFooter}>
-      <span>kamára &copy;2024</span>
-      </div>
-    </div>  
+ <Footer/>
 
     </div>
 
