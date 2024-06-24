@@ -6,7 +6,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    overflow-y: hidden;
   }
 
   .navbarCtn{
@@ -41,8 +40,14 @@
     flex-direction: row;
     height: 90vh;
     width: 250vw;
-    margin-top: 2em;
+    margin-top: 4em;
     gap: 2em;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .scrollableContent::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
   }
 
   img{
@@ -56,7 +61,7 @@
     bottom: 0;
     left: 0;
     width: 100vw;
-    height: 10vh;
+    height: 5vh;
     /* padding: 2em; */
     display: flex;
     justify-content: space-around;
@@ -65,7 +70,8 @@
   .marker{
     width: 1px;
     width: 100%;
-    background: aliceblue;
+    background:black;
+    color: aliceblue;
   }
 
   .scroller{
@@ -79,6 +85,7 @@
    /* line-height: 120%; */
   }
 
+
   /*.scrollableItem{
     position: relative;
     width: 100vw;
@@ -89,12 +96,11 @@
   .draggableContainer {
     width: 100%;
     overflow: hidden;
-    cursor: grab;
   }
   
   .draggableContent {
     display: flex;
-  }
+  } 
 
 
 
@@ -104,4 +110,48 @@
     .pageCtn {
       padding: 1em 1em;
     }
+
+    .navbarCtn{
+      position: fixed;
+      top: 0;
+      width: 91vw;
+      padding-top: 1em;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      /*padding: 2em 2em 0em; */
+      box-sizing: border-box;
+      z-index: 1;
+      font-size: 14px;
+    }
+    
+    .navbarRight{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 1em;
+    }
+
+    .text{
+      width:100%;
+      word-break: break-all;
+      display: flex;
+      flex-direction: column;
+      margin-top: 2em;
+    }
+
+    .scrollableContent{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 2em;
+      gap: 2em;
+      margin-bottom: 2em;
+    }
+  
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
 }

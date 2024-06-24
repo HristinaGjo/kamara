@@ -14,7 +14,7 @@ import DraggableScroll from "../components/DraggableScroll";
 const Echoes = () => {
     return ( 
         <>
-        <DraggableScroll>
+
         <div className={classes.pageCtn}>
 
         <div className={classes.navbarCtn}>
@@ -56,14 +56,14 @@ const Echoes = () => {
             </div>
         </div>
 
-        <div className={classes.timeline}>
+      { /* <div className={classes.timeline}>
             <div className={classes.scroller}>
-                <span>[<span>Drag</span>]</span>
+      
             </div>
-        </div>
+        </div> */}
 
         </div>
-        </DraggableScroll>
+
         </>
      );
 }
