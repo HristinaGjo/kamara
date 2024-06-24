@@ -1,25 +1,19 @@
 .pageCtn {
     box-sizing: border-box;
-    padding: 0 4em;
+    padding: 2em 2em;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+    justify-content: center;
   }
   
-  .titleItems {
+  .titleItems{
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: end;
-    margin-bottom: 2em;
-    align-items: start;
-    height: 100%;
-    gap: 2em;
-    width: 100%;
+    align-items: end;
+    margin-bottom: 4em;
   }
   
   .titleItem {
@@ -47,36 +41,41 @@
     opacity: 1 !important;
   }
   
+
   .backgroundImage {
+    height: 100%;
+    width: 100%;
+
     background-image: url("https://images.pexels.com/photos/4904563/pexels-photo-4904563.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-    background-position: center 40%;
-    background-size: cover;
-    left: 0;
-    height: 100vh;
-    opacity: 0.5;
     position: absolute;
-    top: 0;
+    left: 0px;
+    top: 0px;
+    z-index: -2;
+
+    background-position: center 40%;
+    background-size: 110vmax;
+    opacity: 0.5;
+
     transition: opacity 800ms ease,
     background-size 800ms ease,
     background-position 800ms ease;
-    width: 100vw;
-    z-index: -2;
+
   }
   
   /* Change background positions based on the active index */
-  .titleItems[data-active-index="0"] .backgroundImage {
+  .titleItems[data-active-index="0"] > .backgroundImage {
     background-position: center 50%;
   }
   
-  .titleItems[data-active-index="1"] .backgroundImage {
+  .titleItems[data-active-index="1"] > .backgroundImage {
     background-position: center 60%;
   }
   
-  .titleItems[data-active-index="2"] .backgroundImage {
+  .titleItems[data-active-index="2"] > .backgroundImage {
     background-position: center 75%;
   }
   
-  .titleItems[data-active-index="3"] .backgroundImage {
+  .titleItems[data-active-index="3"] > .backgroundImage {
     background-position: center 90%;
   }
   
@@ -89,23 +88,17 @@
   .footer {
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    padding: 0 4em;
     box-sizing: border-box;
   }
   
-  .leftCtnFooter, .rightCtnFooter {
-    padding: 1em 0;
-  }
-  
-  .rightCtnFooter {
-    text-align: right;
-  }
   
   /* Media queries for mobile screens */
   @media (max-width: 768px) {
+    
     .pageCtn {
-      padding: 0 2em;
+      padding: 1em 1em;
     }
   
     h1 {
@@ -125,34 +118,20 @@
     }
   
     .footer {
-      padding: 1em 2em;
-      flex-direction: column;
       align-items: center;
       text-align: center;
     }
   
     .leftCtnFooter, .rightCtnFooter {
-      padding: 0.5em 0;
       font-size: 0.875rem;
     }
 
+  }
 
-  .titleItems[data-active-index="0"] .backgroundImage {
-    background-size: cover;
-  }
-  
-  .titleItems[data-active-index="1"] .backgroundImage {
-    background-size: cover;
-  }
-  
-  .titleItems[data-active-index="2"] .backgroundImage {
-    background-size: cover;
-  }
-  
-  .titleItems[data-active-index="3"] .backgroundImage {
-    background-size: cover;
-  }
-  }
+
+
+
+
 
 
 
@@ -194,3 +173,31 @@
 } */
 
 
+/* old */
+
+  /*.titleItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: 2em;
+    align-items: start;
+    height: 100%;
+    gap: 2em;
+    width: 100%;
+  } */
+
+    /*.backgroundImage {
+    background-image: url("https://images.pexels.com/photos/4904563/pexels-photo-4904563.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-position: center 40%;
+    background-size: cover;
+    left: 0;
+    height: 100vh;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    transition: opacity 800ms ease,
+    background-size 800ms ease,
+    background-position 800ms ease;
+    width: 100vw;
+    z-index: -2;
+  }*/

@@ -3,11 +3,10 @@
   top: 0;
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  padding: 2em 4em 0;
+  /*padding: 2em 2em 0;*/
   box-sizing: border-box;
   z-index: 1;
 }
-
 
 .navbarRight{
   display: flex;
@@ -18,8 +17,9 @@
 
 
 @media (max-width: 768px) {
+
   .navbarCtn{
-    padding: 2em 2em 0;
+    font-size: 0.875rem;
   }
 
   .navbarRight{

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import classes from "../styles/landingPage.module.css"
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 import { useNavigate } from "react-router-dom";
 
 
@@ -32,6 +33,7 @@ const LandingPage = () => {
   return ( 
     <>
     <div className={classes.pageCtn}>
+      <Navbar/>
     <div className={classes.titleItems} data-active-index={activeIndex}>
       <div className={classes.titleItem}>
        {titles.map((item,index) =>(
@@ -47,16 +49,18 @@ const LandingPage = () => {
     </div>
     <div className={classes.backgroundPattern}></div>
     <div className={classes.backgroundImage}></div>
+
   
     </div>
- { /*  <div className={classes.footer}>
+    <div className={classes.footer}>
     <div className={classes.leftCtnFooter}>
       <span>photographer</span>
       </div>
       <div className={classes.rightCtnFooter}>
       <span>kamára &copy;2024</span>
       </div>
-    </div>  */}
+    </div>  
+
     </div>
 
     </>
