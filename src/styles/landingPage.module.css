@@ -7,13 +7,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow-y: hidden;
   }
   
   .titleItems{
     height: 100vh;
     display: flex;
     align-items: end;
-    margin-bottom: 4em;
+    margin-bottom: 12em;
   }
   
   .titleItem {
@@ -21,12 +22,12 @@
     text-transform: uppercase;
   }
   
-  p {
+  /* p {
     font-size: 5rem;
     letter-spacing: 5px;
     line-height: 0.3;
     font-weight: 400;
-  }
+  } */
   
   .titleLink {
     transition: opacity 0.3s;

@@ -1,60 +1,59 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { Draggable } from 'gsap/Draggable';
-import classes from "../styles/echoes.module.css";
 
 gsap.registerPlugin(Draggable);
 
-const DraggableScroll = ({ children, scrollerRef }) => {
-    const containerRef = useRef(null);
+const DraggableScroll = ({ containerRef }) => {
+  const timelineRef = useRef(null);
+  const scrollerRef = useRef(null);
 
-    useEffect(() => {
-        const scrollContainer = containerRef.current.querySelector(`.${classes.scrollableContent}`);
-        const scrollWidth = scrollContainer.scrollWidth - scrollContainer.clientWidth;
-        const timeline = containerRef.current.querySelector(`.${classes.timeline}`);
-        const scroller = scrollerRef.current;
-        const timelineWidth = timeline.clientWidth;
-        const scrollerWidth = scroller.clientWidth;
+  useEffect(() => {
+    const timeline = timelineRef.current;
+    const scroller = scrollerRef.current;
+    const container = containerRef.current;
 
-        Draggable.create(scroller, {
-            type: 'x',
-            bounds: {
-                minX: 0,
-                maxX: timelineWidth - scrollerWidth,
-            },
-            onDrag: function() {
-                const progress = this.x / (timelineWidth - scrollerWidth);
-                scrollContainer.scrollLeft = progress * scrollWidth;
-            },
-            onThrowUpdate: function() {
-                const progress = this.x / (timelineWidth - scrollerWidth);
-                scrollContainer.scrollLeft = progress * scrollWidth;
-            }
+    if (!timeline || !scroller || !container) return;
+
+    const timelineWidth = timeline.offsetWidth;
+    const scrollerWidth = scroller.offsetWidth;
+    const gap = parseInt(window.getComputedStyle(document.body).fontSize);
+
+    const maxDragX = timelineWidth - scrollerWidth - 2 * gap;
+
+    for (let i = 0; i < 50; i++) {
+      const marker = document.createElement('div');
+      marker.classList.add('marker');
+      timeline.appendChild(marker);
+    }
+
+    Draggable.create(scroller, {
+      type: 'x',
+      bounds: {
+        minX: gap,
+        maxX: timelineWidth - scrollerWidth - gap,
+      },
+      onDrag: function () {
+        let progress = (this.x - gap) / maxDragX;
+        let containerX = -400 * (timelineWidth / 100) * progress;
+        gsap.to(container, {
+          x: containerX,
+          duration: 1,
+          ease: 'power3.out',
         });
+      },
+    });
+  }, [containerRef]);
 
-        const syncScroller = () => {
-            const progress = scrollContainer.scrollLeft / scrollWidth;
-            gsap.to(scroller, {
-                x: progress * (timelineWidth - scrollerWidth),
-                duration: 0.2,
-                ease: 'power1.out',
-            });
-        };
-
-        scrollContainer.addEventListener('scroll', syncScroller);
-
-        return () => {
-            scrollContainer.removeEventListener('scroll', syncScroller);
-        };
-    }, [scrollerRef]);
-
-    return (
-        <div className={classes.draggableContainer} ref={containerRef}>
-            <div className={classes.draggableContent}>
-                {children}
-            </div>
-        </div>
-    );
+  return (
+    <div ref={timelineRef} className="timeline">
+      <div ref={scrollerRef} className="scroller">
+        <span>
+          [<span>Drag</span>]
+        </span>
+      </div>
+    </div>
+  );
 };
 
 export default DraggableScroll;

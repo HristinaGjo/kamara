@@ -43,7 +43,7 @@ const LandingPage = () => {
         onMouseOver={() => handleMouseOver(index)}
         onClick={() => handleClick(item.title)}
         > 
-        <p>{item.title}</p>
+        <h1>{item.title}</h1>
         </div>
       ))}
     </div>
