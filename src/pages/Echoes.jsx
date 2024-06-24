@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import img1 from "../assets/echoes-1.jpg"
 import img2 from "../assets/echoes-2.jpg"
 import img3 from "../assets/echoes-3.jpg"
-import imgNextProject from "../assets/echoes-4.jpg"
+import imgNextProject from "../assets/nextOdyssey.webp"
 import img6 from "../assets/echoes-5.jpg"
 import img5 from "../assets/echoes-6.jpg"
 import img7 from "../assets/echoes-7.jpg"
@@ -36,7 +36,7 @@ const Echoes = () => {
 
         <div className={classes.container}>
             <section className={`${classes.container} ${classes.section01}`}>
-                <h1>Echoes <br/>A Journey into Future Realms</h1>
+                <h1>Echoes-<br/>A Journey into Future Realms</h1>
                 <div className={classes.textSpan}>
                 <span >In the depths of the digital age, where humanity's aspirations meet the cutting edge of technology, 
                     lies the Echoes series—a photographic odyssey through realms yet uncharted, where pixels dance with 
@@ -67,7 +67,7 @@ const Echoes = () => {
                 </div>
             </section> */}
                 <section className={`${classes.container} ${classes.section03}`}>
-                <h1>Echoes <br/>A Journey into Future Realms</h1>
+                <h1>Echoes-<br/>A Journey into Future Realms</h1>
                 <div className={classes.textSpan}>
                 <span> Echoes is more than a collection of images; it is a narrative of our collective journey into the future.
                     Echoes invites introspection on the human condition amidst a digital age. 
@@ -88,13 +88,12 @@ const Echoes = () => {
             </section>
 
             <section className={`${classes.container} ${classes.section05}`}>
-          <Link to="/odyssey" className={classes.nextProject}>
+          <Link to="/odyssey#volume01" className={classes.nextProject}>
               <div className={classes.textNextProject}>
-                <h1>Odyssey <br/>A Journey into Future Realms</h1>
+                <h1>Odyssey-<br/>A Journey into Future Realms</h1>
                 <span> [Next Project &rarr;]</span>
               </div>
               <img className={`${classes.img} ${classes.imgNextProject}`} src={imgNextProject} alt="image 4"/>
-        
           </Link>
         </section> 
          

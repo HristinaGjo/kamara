@@ -13,8 +13,9 @@
   .titleItems{
     height: 100vh;
     display: flex;
+    justify-content: start;
     align-items: end;
-    margin-bottom: 12em;
+    margin-bottom: 10em;
   }
   
   .titleItem {

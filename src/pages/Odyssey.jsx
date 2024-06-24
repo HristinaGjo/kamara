@@ -1,20 +1,33 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import classes from "../styles/echoes.module.css"
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
-import img1 from "../assets/echoes-1.jpg"
-import img2 from "../assets/echoes-2.jpg"
-import img3 from "../assets/echoes-3.jpg"
-import img4 from "../assets/echoes-3.jpg"
+import { useLocation } from "react-router-dom";
+import img1 from "../assets/odyssey-1.webp"
+import img2 from "../assets/odyssey-2.webp"
+import img3 from "../assets/odyssey-3.webp"
+import img4 from "../assets/odyssey-4.webp"
+import img6 from "../assets/odyssey-5.webp"
+import img5 from "../assets/odyssey-6.webp"
 import imgNextProject from "../assets/echoes-4.jpg"
-import img6 from "../assets/echoes-5.jpg"
-import img5 from "../assets/echoes-6.jpg"
-import img7 from "../assets/echoes-7.jpg"
+/* import img7 from "../assets/echoes-7.jpg"
 import img9 from "../assets/echoes-8.jpg"
-import img8 from "../assets/echoes-9.jpg"
+import img8 from "../assets/echoes-9.jpg" */
 
 const Odyssey = () => {
+
+    const location = useLocation();
+    const containerRef = useRef(null);
+    const section01Ref = useRef(null);
+  
+    useEffect(() => {
+      const hash = location.hash;
+      if (hash === "#volume01" && section01Ref.current) {
+        section01Ref.current.scrollIntoView({ behavior: "smooth" });
+      }
+    }, [location]);
+
 
     return ( 
         <>
@@ -35,17 +48,18 @@ const Odyssey = () => {
             </div>
         </div>
 
-        <div className={classes.container}>
-            <section className={`${classes.container} ${classes.section01}`}>
-                <h1>Echoes <br/>A Journey into Future Realms</h1>
+        <div className={classes.container} ref={containerRef}>
+            <section className={`${classes.container} ${classes.section01}`}
+             ref={section01Ref}
+             id="volume01"
+             >
+                <h1>Odyssey-<br/>Encounters with the Unknown</h1>
                 <div className={classes.textSpan}>
-                <span >In the depths of the digital age, where humanity's aspirations meet the cutting edge of technology, 
-                    lies the Echoes series—a photographic odyssey through realms yet uncharted, where pixels dance with 
-                    imagination and reality blurs with dreams.
+                <span>Odyssey is more than a collection of sci-fi images; it is a narrative of exploration and discovery, 
+                        a visual symphony that celebrates the boundless curiosity and indomitable spirit of humanity.
                     </span>
-                    <span>As the series unfolds, each photograph echoes the aspirations and dilemmas of a civilization on the brink of tomorrow.
-                    It challenges perceptions of what lies ahead, prompting contemplation on the ethical implications of our technological 
-                    pursuits and the essence of humanity in an increasingly digital landscape.
+                    <span>In the heart of the journey, Odyssey delves into the mystery of the extraterrestrial.
+                    Shadows hint at the presence of beings from beyond our understanding, their forms elusive yet captivating. 
                     </span>
                 </div>
                 <div className={classes.scroller}>
@@ -68,14 +82,10 @@ const Odyssey = () => {
                 </div>
             </section> */}
                 <section className={`${classes.container} ${classes.section03}`}>
-                <h1>Echoes <br/>A Journey into Future Realms</h1>
+                <h1>Odyssey-<br/>Encounters with the Unknown</h1>
                 <div className={classes.textSpan}>
-                <span> Echoes is more than a collection of images; it is a narrative of our collective journey into the future.
-                    Echoes invites introspection on the human condition amidst a digital age. 
-                    It explores themes of connectivity and isolation.
-                    </span>
-                    <span>Join us in this exploration of Echoes—a symphony of light, pixels, and aspirations—a visual testament 
-                        to the boundless creativity and limitless potential of the human spirit in the age of tomorrow.
+                <span> Through this series, we are invited to dream, to imagine, and to embark on our own odysseys, wherever they may lead. 
+                It is a testament to the fact that in the vast theater of the universe, the journey is just as important as the destination.
                     </span>
                 </div>
             </section>
@@ -88,16 +98,14 @@ const Odyssey = () => {
                 </div>
             </section>
             <section className={`${classes.container} ${classes.section05}`}>
-            <div className={classes.nextProject}>
-                <div className={classes.textNextProject}>
-                <h1>Odyssey <br/>A Journey into Future Realms</h1>
+          <Link to="/odyssey" className={classes.nextProject}>
+              <div className={classes.textNextProject}>
+                <h1>Odyssey-<br/>A Journey into Future Realms</h1>
                 <span> [Next Project &rarr;]</span>
-                </div>
-                <img className={`${classes.img} ${classes.imgNextProject}`} src={imgNextProject} alt="image 4"/>
-                </div>
-
-               
-            </section> 
+              </div>
+              <img className={`${classes.img} ${classes.imgNextProject}`} src={imgNextProject} alt="image 4"/>
+          </Link>
+        </section> 
 
         </div>
 
