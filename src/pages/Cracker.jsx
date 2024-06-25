@@ -2,16 +2,13 @@ import React, { useEffect, useRef } from "react";
 import classes from "../styles/echoes.module.css"
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import img1 from "../assets/odyssey-1.webp"
-import img2 from "../assets/odyssey-2.webp"
-import img3 from "../assets/odyssey-3.webp"
-import img4 from "../assets/odyssey4.webp"
-import img6 from "../assets/odyssey5.webp"
-import img5 from "../assets/odyssey6.webp"
-import imgNextProject from "../assets/nextCracker.webp"
+import img1 from "../assets/cracker-1.webp"
+import img2 from "../assets/cracker-2.webp"
+import img3 from "../assets/cracker-3.webp"
+import img5 from "../assets/cracker-5.webp"
+import imgNextProject from "../assets/nextWl.webp"
 
-
-const Odyssey = () => {
+const Cracker = () => {
 
     const location = useLocation();
     const containerRef = useRef(null);
@@ -51,7 +48,7 @@ const Odyssey = () => {
              ref={section01Ref}
              id="volume01"
              >
-                <h1>Odyssey-<br/>Encounters with the Unknown</h1>
+                <h1>Cracker-<br/>Encounters with the Unknown</h1>
                 <div className={classes.textSpan}>
                 <span>Odyssey is more than a collection of sci-fi images; it is a narrative of exploration and discovery, 
                         a visual symphony that celebrates the boundless curiosity and indomitable spirit of humanity.
@@ -66,9 +63,9 @@ const Odyssey = () => {
             </section>
             <section className={`${classes.container} ${classes.section02}`}>
                 <div className={classes.img}>
-                <img className={`${classes.img} ${classes.img01}`} src={img1} alt="image 1"/>
+               {/* <img className={`${classes.img} ${classes.img01}`} src={img1} alt="image 1"/>*/}
                     <img className={`${classes.img} ${classes.img02}`} src={img2} alt="image 2"/>
-                    <img className={`${classes.img} ${classes.img03}`} src={img3} alt="image 3"/>
+                   {/* <img className={`${classes.img} ${classes.img03}`} src={img3} alt="image 3"/> */}
           
                 </div>
             </section>
@@ -80,7 +77,7 @@ const Odyssey = () => {
                 </div>
             </section> */}
                 <section className={`${classes.container} ${classes.section03}`}>
-                <h1>Odyssey-<br/>Encounters with the Unknown</h1>
+                <h1>Cracker-<br/>Encounters with the Unknown</h1>
                 <div className={classes.textSpan}>
                 <span> Through this series, we are invited to dream, to imagine, and to embark on our own odysseys, wherever they may lead. 
                 It is a testament to the fact that in the vast theater of the universe, the journey is just as important as the destination.
@@ -90,15 +87,15 @@ const Odyssey = () => {
 
             <section className={`${classes.container} ${classes.section04}`}>
             <div className={classes.img}>
-            <img className={`${classes.img} ${classes.img01}`} src={img4} alt="image 4"/>
+            <img className={`${classes.img} ${classes.img01}`} src={img3} alt="image 4"/>
                 <img className={`${classes.img} ${classes.img02}`} src={img5} alt="image 5"/>
-                <img className={`${classes.img} ${classes.img03}`} src={img6} alt="image 6"/>
+                <img className={`${classes.img} ${classes.img03}`} src={img1} alt="image 6"/>
                 </div>
             </section>
             <section className={`${classes.container} ${classes.section05}`}>
-          <Link to="/cracker#volume01" className={classes.nextProject}>
+          <Link to="/dystopia#volume01" className={classes.nextProject}>
               <div className={classes.textNextProject}>
-                <h1>Cracker-<br/>A Journey into Future Realms</h1>
+                <h1>Wasteland-<br/>A Journey into Future Realms</h1>
                 <span> [Next Project &rarr;]</span>
               </div>
               <img className={`${classes.img} ${classes.imgNextProject}`} src={imgNextProject} alt="image 4"/>
@@ -111,4 +108,4 @@ const Odyssey = () => {
      );
 }
  
-export default Odyssey;
+export default Cracker;

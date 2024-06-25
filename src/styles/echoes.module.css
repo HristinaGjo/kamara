@@ -152,7 +152,20 @@
     text-transform: uppercase;
   }
 
+  .imgNextProject img {
+    max-width: 100%; 
+    background-position: center;
+  }
 
+
+  
+  
+
+  /* Add this at the end of your CSS file */
+/* .fadeOut {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+} */
 
   @media (max-width: 768px) {
  
