@@ -150,7 +150,7 @@
       position: fixed;
       top: 0;
       width: 100vw;
-      padding: 1em 1em;
+      padding: 1em 1em ;
       display: grid;
       grid-template-columns: repeat(2,1fr);
       box-sizing: border-box;
@@ -186,10 +186,6 @@
       width: 100%;
     }
 
-    section{
-      gap: 4em;
-    }
-
     .section01,
     .section03{
       display: flex;
@@ -210,7 +206,7 @@
     .section02 .img img,
     .section04 .img img {
         flex: 0 0 auto;
-        width: 30%;
+        width: 35%;
         height: auto;
     }
 
@@ -219,12 +215,18 @@
       top: 97%;
     }
 
-    .section5{
-      width: 100vw;
+    .section05 {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: center;
+      align-items: center;
+      gap: 0;
+      width: 30%; /* Adjust width as per your requirement */
+      margin: auto; /* Center align horizontally */
     }
-
+  
     .nextProject{
-      width: 100%;
+      width:auto;
       display: flex;
       flex-direction: column;
       justify-content: start;
