@@ -176,7 +176,7 @@
       top: 0;
       left: 0;
       width: 1000vw;
-      height: 95dvh;
+      height: 100dvh;
       display: flex;
       overflow-x: scroll; 
     }
@@ -184,7 +184,7 @@
     .textSpan{
       font-size: 16px;
       gap: 1em;
-      width: 50%;
+      width: 100%;
     }
 
    /* section{
@@ -204,8 +204,8 @@
       justify-content: start;
       align-items: start;
       gap: 1em;
-      width: 100%;
-      height: auto;
+      width: 400vw;
+      padding: 4em 2em 0 1em;
     }
 
     .section02,
@@ -213,6 +213,11 @@
       display: grid;
       grid-template-columns: 1fr, 1fr;
       justify-content: center;
+    }
+
+    .scroller{
+      left: 1em;
+      top: 95%;
     }
 
     .nextProject{
