@@ -186,6 +186,10 @@
       width: 100%;
     }
 
+    section{
+      padding: 4em 1em 0 1em;
+    }
+
     .section01,
     .section03{
       display: flex;
