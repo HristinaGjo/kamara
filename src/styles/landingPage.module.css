@@ -102,9 +102,8 @@
       padding: 1em 1em;
     }
   
-    p {
+   .titleItem h1 {
       font-size: 2.5rem;
-      line-height: 0.2;
     }
   
     .backgroundImage {

@@ -34,22 +34,6 @@
     overflow-x: scroll; 
   }
 
-  /*.timeline{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-    height: 10vh;
-    display: flex;
-    justify-content: space-around;
-  }*/
-
-  .marker {
-    width: 1px;
-    height: 10%;
-    background: white;
-  }
-
   .scroller{
     position: absolute;
     position: absolute;
@@ -59,7 +43,7 @@
    /* text-transform: uppercase; */
     cursor: pointer;
     /* line-height: 120%; */
-  }
+  } 
 
   section{
     position: relative;
@@ -152,14 +136,7 @@
     text-transform: uppercase;
   }
 
-  .imgNextProject img {
-    max-width: 100%; 
-    background-position: center;
-  }
 
-
-  
-  
 
   /* Add this at the end of your CSS file */
 /* .fadeOut {
@@ -169,12 +146,11 @@
 
   @media (max-width: 768px) {
  
-
     .navbarCtn{
       position: fixed;
       top: 0;
-      width: 91vw;
-      padding-top: 1em;
+      width: 100vw;
+      padding: 1em 1em;
       display: grid;
       grid-template-columns: repeat(2,1fr);
       /*padding: 2em 2em 0em; */
@@ -190,4 +166,78 @@
       gap: 1em;
     }
 
+    .container h1 {
+      font-size: 2.5rem;
+    }
+
+    .textSpan{
+      font-size: 16px;
+      gap: 1em;
+    }
+
+    section{
+      position: relative;
+      width: 400vw;
+      height: 100%;
+      padding: 4em 2em 0 2em;
+      display: flex;
+      gap: 2em;
+      overflow: hidden;
+    }
+
+    .section01,
+    .section03{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      gap: 1em;
+      width: 100%;
+      height: auto;
+    }
+
+    .section02,
+    .section04{
+      display: grid;
+      grid-template-columns: 1fr, 1fr;
+      justify-content: center;
+    }
+
+    .nextProject{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      gap: 1em;
+    }
+
+    .textNextProject{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      margin-left: 0;
+      gap: 1em;
+    }
+
 }
+
+
+
+
+  /*.timeline{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+  }*/
+
+ /* .marker {
+    width: 1px;
+    height: 10%;
+    background: white;
+  } */
