@@ -72,6 +72,10 @@ h2{
 
 p{
   color: aliceblue;
+  margin: 0;
+  padding: 0;
+  line-height: 120%;
+  font-weight: 350;
 }
 
 

@@ -163,7 +163,7 @@
       position: fixed;
       top: 0;
       width: 100vw;
-      padding: 1em 1em ;
+      padding: 1.5em 1em 0 1em;
       display: grid;
       grid-template-columns: repeat(2,1fr);
       box-sizing: border-box;
@@ -285,6 +285,11 @@
       display: block;
       text-transform: uppercase;
       font-size: 12px;
+    }
+
+    .spanTitle .spanHeadline {
+      font-weight: 600;
+      line-height: 120%;
     }
 
 }

@@ -2,11 +2,19 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);  
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .rightCtn{
     display: flex;
     flex-direction: row;
     justify-content: end;
+}
+
+@media (max-width: 768px) {
+
+    .overlay{
+        font-size: 12px;
+    } 
+
 }
