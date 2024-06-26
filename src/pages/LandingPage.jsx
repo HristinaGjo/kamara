@@ -36,7 +36,7 @@ const LandingPage = () => {
       <Navbar/>
     <div className={classes.titleItems} data-active-index={activeIndex}>
       <div className={classes.titleItem}>
-      <div className={classes.projects}><p className={classes.headline} >PROJECTS [4]</p></div>
+      <div className={classes.projects}><p className={classes.headline} >PROJECTS [04]</p></div>
        {titles.map((item,index) =>(
         <div
         key={index}
