@@ -24,16 +24,16 @@ const LandingPage = () => {
 
   const titles = [
     {title:"Echoes", className:classes.titleLink},
-    {title:"Odyssey", className:classes.titleLink},
-    {title:"Cracker", className:classes.titleLink},
-    {title:"Dystopia", className:classes.titleLink},
+    {title:"About", className:classes.titleLink},
+    {title:"Contact", className:classes.titleLink},
+    /* {title:"Dystopia", className:classes.titleLink},*/
   ];
   
 
   return ( 
     <>
     <div className={classes.pageCtn}>
-      <Navbar/>
+     {/* <Navbar/> */}
     <div className={classes.titleItems} data-active-index={activeIndex}>
       <div className={classes.titleItem}>
        {titles.map((item,index) =>(
@@ -50,7 +50,7 @@ const LandingPage = () => {
     <div className={classes.backgroundPattern}></div>
     <div className={classes.backgroundImage}></div>
     </div>
- <Footer/>
+{/* <Footer/> */}
 
     </div>
 

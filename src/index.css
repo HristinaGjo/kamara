@@ -1,10 +1,11 @@
 :root {
   /*font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;*/
-  font-family: 'DINRoundPro-Medi', sans-serif;
+  /* font-family: 'DINRoundPro-Medi', sans-serif; */
   /* font-family: "Tahoma", sans-serif; */
   /*font-family: "Instrument Serif", serif; */
   /*font-family: "Neue Montreal", sans-serif;*/
   /*font-family: "Thunder", sans-serif;*/
+  font-family: "Barlow Condensed", sans-serif ;
   line-height: 1;
   font-weight: 400;
   margin: 0;

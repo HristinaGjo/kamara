@@ -87,6 +87,10 @@
     justify-content: space-between;
     box-sizing: border-box;
   }
+
+  .titleItem h1 {
+    font-size: 10vw;
+    }
   
   
   /* Media queries for mobile screens */
