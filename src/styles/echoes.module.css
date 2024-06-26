@@ -168,7 +168,7 @@
       grid-template-columns: repeat(2,1fr);
       box-sizing: border-box;
       z-index: 1;
-      font-size: 14px;
+      font-size: 12px;
     }
     
     .navbarRight{
@@ -193,15 +193,19 @@
       top: 0;
       left: 0;
       width: 1000vw;
-      height: 95dvh;
+      height: 97dvh;
       display: flex;
       overflow-x: scroll; 
+    }
+
+    .headline{
+      width: 96%;
     }
 
     .textSpan{
       font-size: 16px;
       gap: 1em;
-      width: 100%;
+      width: 96%;
       padding-left: 0;
       padding-right: 0;
     }
@@ -265,6 +269,12 @@
       align-items: start;
       margin-left: 0;
       gap: 1em;
+      
+    }
+
+    .textNextProject span{
+      font-size: 12px;
+
     }
 
     .textScroll {
@@ -274,6 +284,7 @@
     .scrollerMobile{
       display: block;
       text-transform: uppercase;
+      font-size: 12px;
     }
 
 }
