@@ -200,15 +200,33 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    opacity: 0.6;
-  }
-
+    opacity: 0.4;
   }
 
   .projects h2{
     font-size: 2em;
     margin-bottom: 1em;
   }
+
+
+  .titleLink {
+    transition: none;
+  }
+  
+  .titleItem:hover .titleLink {
+    opacity: 1;
+  }
+  
+  .titleLink:hover {
+    opacity: 1 !important;
+  }
+  
+
+  
+
+  }
+
+
 
 
 
