@@ -33,15 +33,15 @@ const Dystopia = () => {
         <div className={classes.navbarCtn}>
             <div className={classes.logo}>
                 <Link to="/">
-            <span>kamára</span>
+            <span>[ kamára ]</span>
             </Link>
             </div>
             <div className={classes.navbarRight}>
                 <Link to="/about">
-                <span>about</span>
+                <span>[ about ]</span>
                 </Link>
                 <Link to="/contact">
-                <span>contact</span>
+                <span>[ contact ]</span>
                 </Link>
             </div>
         </div>
@@ -54,7 +54,7 @@ const Dystopia = () => {
                 <div className={classes.headline}>
                         <h1>Dystopia</h1>
                         <h2>Echoes of a Fallen World</h2>
-                        <span className={classes.textScroll}>[<span>scroll &rarr;</span>]</span>
+                        <span className={classes.textScroll}>[ scroll &rarr; ]</span>
                     </div>
                 <div className={classes.textSpan}>
                 <span>In a world where the future has unraveled into chaos, Dystopia tells the story of survival and 
@@ -68,8 +68,8 @@ const Dystopia = () => {
                     </span>
                 </div>
                 <div className={classes.scrollerMobile}>
-                <span>[<span>scroll &rarr;</span>]</span>
-            </div>
+                        <span>[ scroll &rarr; ]</span>
+                </div> 
             </section>
             <section className={`${classes.container} ${classes.section02}`}>
                 <div className={classes.img}>
@@ -90,7 +90,7 @@ const Dystopia = () => {
                     <div className={classes.headline}>
                         <h1>Dystopia</h1>
                         <h2>Echoes of a Fallen World</h2>
-                        <span className={classes.textScroll}>[<span>scroll &rarr;</span>]</span>
+                        <span className={classes.textScroll}>[ scroll &rarr; ]</span>
                     </div>
                 <div className={classes.textSpan}>
                 <span> Through their eyes, Dystopia reveals a world where the lines between past and future blur,
@@ -104,8 +104,8 @@ const Dystopia = () => {
                     </span>
                 </div>
                 <div className={classes.scrollerMobile}>
-                <span>[<span>scroll &rarr;</span>]</span>
-            </div>
+                        <span>[ scroll &rarr; ]</span>
+                </div> 
             </section>
 
             <section className={`${classes.container} ${classes.section04}`}>
@@ -122,7 +122,7 @@ const Dystopia = () => {
                 <h1>Return </h1>
                 <h2>to the beginning...</h2>
                 </div>
-                <span className={classes.textNext}> [Back to Home Page &rarr;]</span>
+                <span className={classes.textNext}> [ Back to Home Page &rarr; ]</span>
               </div>
               <img className={`${classes.img} ${classes.imgNextProject}`} src={imgNextProject} alt="image 4"/>
           </Link>

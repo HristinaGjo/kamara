@@ -73,7 +73,7 @@
 
     background-position: center 40%;
     background-size: 110vmax;
-    opacity: 0.7;
+    opacity: 0.8;
 
     transition: opacity 800ms ease,
     background-size 800ms ease,
@@ -101,7 +101,7 @@
   /* Background size and opacity changes on hover */
   .titleItems:hover .backgroundImage {
     background-size: 95vw;
-    opacity: 0.4;
+    opacity: 0.6;
   }
   
   .footer {
@@ -112,7 +112,6 @@
     box-sizing: border-box;
   }
 
- 
   
   
   /* Media queries for mobile screens */
@@ -178,6 +177,14 @@
 
   .spanHeadline{
     margin-bottom: 1em;
+  }
+
+  .titleItems:hover .backgroundImage {
+    transition: none;
+    background-size: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 
   }

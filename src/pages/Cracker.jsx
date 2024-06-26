@@ -30,15 +30,15 @@ const Cracker = () => {
         <div className={classes.navbarCtn}>
             <div className={classes.logo}>
                 <Link to="/">
-            <span>kamára</span>
+            <span>[kamára]</span>
             </Link>
             </div>
             <div className={classes.navbarRight}>
                 <Link to="/about">
-                <span>about</span>
+                <span>[about]</span>
                 </Link>
                 <Link to="/contact">
-                <span>contact</span>
+                <span>[contact]</span>
                 </Link>
             </div>
         </div>
@@ -51,7 +51,7 @@ const Cracker = () => {
              <div className={classes.headline}>
                 <h1>Cracker</h1>
                 <h2>The Shadow of Neon Realities</h2>
-                <span className={classes.textScroll}>[<span>scroll &rarr;</span>]</span>
+                <span className={classes.textScroll}>[ scroll &rarr; ]</span>
                 </div>
                 <div className={classes.textSpan}>
                 <span>In a dystopian future the world of Cracker comes to life through the lens 
@@ -64,7 +64,7 @@ const Cracker = () => {
                     </span>
                 </div>
                 <div className={classes.scrollerMobile}>
-                        <span>[<span>scroll &rarr;</span>]</span>
+                        <span>[ scroll &rarr; ]</span>
                 </div> 
             </section>
             <section className={`${classes.container} ${classes.section02}`}>
@@ -86,7 +86,7 @@ const Cracker = () => {
                 <div className={classes.headline}>
                 <h1>Cracker</h1>
                 <h2>The Shadow of Neon Realities</h2>
-                <span className={classes.textScroll}>[<span>scroll &rarr;</span>]</span>
+                <span className={classes.textScroll}>[ scroll &rarr; ]</span>
                 </div>
                 <div className={classes.textSpan}>
                 <span> This series follows the journey of a lone protagonist, known only as Cracker, 
@@ -100,8 +100,8 @@ const Cracker = () => {
                 </span>
                 </div>
                 <div className={classes.scrollerMobile}>
-                        <span>[<span>scroll &rarr;</span>]</span>
-                    </div> 
+                        <span>[ scroll &rarr; ]</span>
+                </div> 
             </section>
 
             <section className={`${classes.container} ${classes.section04}`}>
@@ -118,7 +118,7 @@ const Cracker = () => {
                 <h1>Dystopia</h1>
                 <h2>Echoes of a Fallen World</h2>
                 </div>
-                <span className={classes.textNext}> [Next Project &rarr;]</span>
+                <span className={classes.textNext}> [ Next Project &rarr; ]</span>
               </div>
               <img className={`${classes.img} ${classes.imgNextProject}`} src={imgNextProject} alt="image 4"/>
           </Link>

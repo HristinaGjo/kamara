@@ -22,29 +22,29 @@ const Echoes = () => {
     }; */
     return (
         <>
-        <div className={classes.pageCtn}>
-            <div className={classes.navbarCtn}>
-                <div className={classes.logo}>
-                    <Link to="/">
-                        <span>kamára</span>
-                    </Link>
-                </div>
-                <div className={classes.navbarRight}>
-                    <Link to="/about">
-                        <span>about</span>
-                    </Link>
-                    <Link to="/contact">
-                        <span>contact</span>
-                    </Link>
-                </div>
+
+        <div className={classes.navbarCtn}>
+            <div className={classes.logo}>
+                <Link to="/">
+            <span>[ kamára ]</span>
+            </Link>
             </div>
+            <div className={classes.navbarRight}>
+                <Link to="/about">
+                <span>[ about ]</span>
+                </Link>
+                <Link to="/contact">
+                <span>[ contact ]</span>
+                </Link>
+            </div>
+        </div>
 
             <div className={classes.container}>
                 <section className={`${classes.container} ${classes.section01}`}>
                     <div className={classes.headline}>
                     <h1>Echoes<br /></h1>
                     <h2>A Journey into Future Realms</h2>
-                    <span className={classes.textScroll}>[<span>scroll &rarr;</span>]</span>
+                    <span className={classes.textScroll}>[ scroll &rarr; ]</span>
                     </div>
                     <div className={classes.textSpan}>
                         <span>In the depths of the digital age, where humanity's aspirations meet the cutting edge of technology, 
@@ -56,9 +56,9 @@ const Echoes = () => {
                             pursuits and the essence of humanity in an increasingly digital landscape.
                         </span>
                     </div>
-                  <div className={classes.scrollerMobile}>
-                        <span>[<span>scroll &rarr;</span>]</span>
-                    </div> 
+                    <div className={classes.scrollerMobile}>
+                        <span>[ scroll &rarr; ]</span>
+                </div> 
                 </section>
                 
                 <section className={`${classes.container} ${classes.section02}`}>
@@ -73,7 +73,7 @@ const Echoes = () => {
                 <div className={classes.headline}>
                     <h1>Echoes<br /></h1>
                     <h2>A Journey into Future Realms</h2>
-                    <span className={classes.textScroll}>[<span>scroll &rarr;</span>]</span>
+                    <span className={classes.textScroll}>[ scroll &rarr; ]</span>
                     </div>
                     <div className={classes.textSpan}>
                         <span> Echoes is more than a collection of images; it is a narrative of our collective journey into the future.
@@ -85,8 +85,8 @@ const Echoes = () => {
                         </span>
                     </div>
                     <div className={classes.scrollerMobile}>
-                        <span>[<span>scroll &rarr;</span>]</span>
-                    </div> 
+                        <span>[ scroll &rarr; ]</span>
+                </div> 
                 </section>
 
                 <section className={`${classes.container} ${classes.section04}`}>
@@ -103,12 +103,11 @@ const Echoes = () => {
                             <h1>Odyssey</h1>
                             <h2>Encounters with the Unknown</h2>
                             </div>
-                            <span className={classes.textNext}> [Next Project &rarr;]</span>
+                            <span className={classes.textNext}> [ Next Project &rarr; ]</span>
                         </div>
                         <img className={`${classes.img} ${classes.imgNextProject}`} src={imgNextProject} alt="image 4" />
                     </Link>
                 </section>
-            </div>
             </div>
         </>
     );

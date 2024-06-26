@@ -59,7 +59,8 @@ h1{
   font-weight: 600;
   letter-spacing: -5%;
   /*font-family: "Barlow Condensed", sans-serif ;*/
-  font-family: "NT Dapper", sans-serif;
+  font-family: "NT Dapper", sans-serif; 
+  /*font-family: "Neue Montreal", sans-serif ; */
   /* color: transparent; */
   /* -webkit-text-stroke: 1px white; */
 }
@@ -74,7 +75,8 @@ h2{
   letter-spacing: -5%;
   text-transform: uppercase;
   /*font-family: "Martian Mono", monospace; */
-  font-family: "Neue Montreal", sans-serif ;
+  /*font-family: "Neue Montreal", sans-serif ;*/
+  font-family: "NT Dapper", sans-serif;
 }
 
 p{
@@ -84,7 +86,9 @@ p{
   line-height: 120%;
   font-weight: 400;
  /* font-family: "Martian Mono", monospace; */
- font-family: "Inter", "Avenir", Helvetica, Arial, sans-serif;
+ /* font-family: "Inter", "Avenir", Helvetica, Arial, sans-serif;*/
+ /*font-family: "Neue Montreal", sans-serif ;*/
+ font-family: "NT Dapper", sans-serif; 
 }
 
 

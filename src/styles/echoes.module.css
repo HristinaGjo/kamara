@@ -124,6 +124,10 @@
     gap: 2em;
   }
 
+  .textNextProject span{
+    font-size: 16px;
+  }
+
   .imgNextProject{
     gap: 0;
   }

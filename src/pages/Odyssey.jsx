@@ -33,15 +33,15 @@ const Odyssey = () => {
         <div className={classes.navbarCtn}>
             <div className={classes.logo}>
                 <Link to="/">
-            <span>kamára</span>
+            <span>[ kamára ]</span>
             </Link>
             </div>
             <div className={classes.navbarRight}>
                 <Link to="/about">
-                <span>about</span>
+                <span>[ about ]</span>
                 </Link>
                 <Link to="/contact">
-                <span>contact</span>
+                <span>[ contact ]</span>
                 </Link>
             </div>
         </div>
@@ -54,7 +54,7 @@ const Odyssey = () => {
              <div className={classes.headline}>
                 <h1>Odyssey</h1>
                 <h2>Encounters with the Unknown</h2>
-                <span className={classes.textScroll}>[<span>scroll &rarr;</span>]</span>
+                <span className={classes.textScroll}>[ scroll &rarr; ]</span>
                 </div>
                 <div className={classes.textSpan}>
                 <span>Odyssey is more than a collection of sci-fi images; it is a narrative of exploration and discovery, 
@@ -65,8 +65,8 @@ const Odyssey = () => {
                     </span>
                 </div>
                 <div className={classes.scrollerMobile}>
-                        <span>[<span>scroll &rarr;</span>]</span>
-                    </div> 
+                        <span>[ scroll &rarr; ]</span>
+                </div> 
             </section>
             <section className={`${classes.container} ${classes.section02}`}>
                 <div className={classes.img}>
@@ -87,7 +87,7 @@ const Odyssey = () => {
                 <div className={classes.headline}>
                 <h1>Odyssey</h1>
                 <h2>Encounters with the Unknown</h2>
-                <span className={classes.textScroll}>[<span>scroll &rarr;</span>]</span>
+                <span className={classes.textScroll}>[ scroll &rarr; ]</span>
                 </div>
                 <div className={classes.textSpan}>
                 <span> Through this series, we are invited to dream, to imagine, and to embark on our own odysseys, wherever they may lead. 
@@ -95,8 +95,8 @@ const Odyssey = () => {
                     </span>
                 </div>
                 <div className={classes.scrollerMobile}>
-                        <span>[<span>scroll &rarr;</span>]</span>
-                    </div> 
+                        <span>[ scroll &rarr; ]</span>
+                </div> 
             </section>
 
             <section className={`${classes.container} ${classes.section04}`}>
@@ -113,7 +113,7 @@ const Odyssey = () => {
                 <h1>Cracker</h1>
                 <h2>A Journey into Future Realms</h2>
                 </div>
-                <span className={classes.textNext}> [Next Project &rarr;]</span>
+                <span className={classes.textNext}> [ Next Project &rarr; ]</span>
               </div>
               <img className={`${classes.img} ${classes.imgNextProject}`} src={imgNextProject} alt="image 4"/>
           </Link>
