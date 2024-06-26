@@ -10,16 +10,7 @@ import img9 from "../assets/echoes-8.jpg";
 import img8 from "../assets/echoes-9.jpg";
 
 const Echoes = () => {
-    /*const [isFading, setIsFading] = useState(false);
-    const navigate = useNavigate();
 
-    const handleNextProjectClick = () => {
-
-        setIsFading(true);
-        setTimeout(() => {
-            navigate("/odyssey#volume01");
-        }, 500); // Duration should match the CSS transition duration
-    }; */
     return (
         <>
 

@@ -1,0 +1,72 @@
+.navbarCtn{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding: 2em 2em;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /*padding: 2em 2em 0em; */
+    box-sizing: border-box;
+    z-index: 1;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "Martian Mono", monospace;
+  }
+  
+  .navbarRight{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 2em;
+  }
+
+  .container{
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: start;
+    gap: 10em;
+    width: 100%;
+    padding: 6em 2em 0 2em;
+  }
+
+  .headline{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1em;
+  
+  }
+
+  .textSpan{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2em;
+    width: 100%;
+    line-height: 1.2;
+    font-size: 20px;
+    grid-column: 2;
+    box-sizing: border-box;
+    padding-left:2em ;
+    padding-right: 2em;
+  }
+
+
+
+  .backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('../assets/aboutMe02.webp');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.8;
+}

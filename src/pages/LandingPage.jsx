@@ -3,6 +3,7 @@ import classes from "../styles/landingPage.module.css"
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { useNavigate } from "react-router-dom";
+import landingPageImg from "../assets/landingPageImg.webp"
 
 
 const LandingPage = () => {
@@ -52,7 +53,9 @@ const LandingPage = () => {
       ))}
     </div>
     <div className={classes.backgroundPattern}></div>
-    <div className={classes.backgroundImage}></div>
+    <div className={classes.backgroundImage}>
+     {/* <img src={landingPageImg} /> */}
+    </div>
     </div>
  <Footer/>
 

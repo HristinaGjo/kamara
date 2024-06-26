@@ -65,7 +65,9 @@
     height: 100%;
     width: 100%;
 
-    background-image: url("https://images.pexels.com/photos/4904563/pexels-photo-4904563.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+   /* background-image: url("https://images.pexels.com/photos/4904563/pexels-photo-4904563.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");*/
+   /* background-image: url("https://images.pexels.com/photos/9525724/pexels-photo-9525724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); */
+   background-image: url("../assets/landingPageImg.webp");
     position: absolute;
     left: 0px;
     top: 0px;
@@ -100,7 +102,7 @@
   
   /* Background size and opacity changes on hover */
   .titleItems:hover .backgroundImage {
-    background-size: 95vw;
+    background-size: 98vw;
     opacity: 0.6;
   }
   
