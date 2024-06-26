@@ -54,6 +54,7 @@ const Odyssey = () => {
              <div className={classes.headline}>
                 <h1>Odyssey</h1>
                 <h2>Encounters with the Unknown</h2>
+                <span className={classes.textScroll}>[<span>scroll &rarr;</span>]</span>
                 </div>
                 <div className={classes.textSpan}>
                 <span>Odyssey is more than a collection of sci-fi images; it is a narrative of exploration and discovery, 

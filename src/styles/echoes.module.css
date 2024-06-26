@@ -137,6 +137,11 @@
     text-transform: lowercase;
   }
 
+  .textScroll {
+    font-size: 20px;
+    margin-top: 2em;
+  }
+
  /* .img1,
   .img2,
   .img3,
@@ -190,7 +195,12 @@
     }
 
     .container h1 {
-      font-size: 2.5rem;
+      font-size: 3.815rem;
+      width: 100%;
+    }
+
+    .container h2 {
+      font-size: 3.052rem;
       width: 100%;
     }
 
@@ -208,6 +218,8 @@
       font-size: 16px;
       gap: 1em;
       width: 100%;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     section{
@@ -221,7 +233,8 @@
       justify-content: start;
       align-items: start;
       gap: 1em;
-      padding: 4em 0em 0 1em;
+      box-sizing: border-box;
+      padding: 4em 1em 0 1em;
       width: 300vw;
     }
 
@@ -250,7 +263,6 @@
       align-items: center;
       gap: 0;
       width: 30%; /* Adjust width as per your requirement */
-      margin: auto; /* Center align horizontally */
     }
   
     .nextProject{
@@ -269,6 +281,10 @@
       align-items: start;
       margin-left: 0;
       gap: 1em;
+    }
+
+    .textScroll {
+      display: none;
     }
 
 }

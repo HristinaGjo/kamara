@@ -44,6 +44,7 @@ const Echoes = () => {
                     <div className={classes.headline}>
                     <h1>Echoes<br /></h1>
                     <h2>A Journey into Future Realms</h2>
+                    <span className={classes.textScroll}>[<span>scroll &rarr;</span>]</span>
                     </div>
                     <div className={classes.textSpan}>
                         <span>In the depths of the digital age, where humanity's aspirations meet the cutting edge of technology, 
@@ -55,9 +56,9 @@ const Echoes = () => {
                             pursuits and the essence of humanity in an increasingly digital landscape.
                         </span>
                     </div>
-                    <div className={classes.scroller}>
+                  <div className={classes.scrollerMobile}>
                         <span>[<span>scroll &rarr;</span>]</span>
-                    </div>
+                    </div> 
                 </section>
                 <section className={`${classes.container} ${classes.section02}`}>
                     <div className={classes.img}>
