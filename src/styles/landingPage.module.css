@@ -150,7 +150,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      opacity: 0.6;
+      opacity: 0.4;
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -165,7 +165,7 @@
 
     
   .projects{
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 2em;
 
   }
@@ -179,7 +179,7 @@
   .titleProjects{
     display: flex;
     flex-direction: column;
-    font-size: 16px;
+
   }
 
   .spanTitle{
@@ -188,6 +188,10 @@
 
   .spanHeadline{
     margin-bottom: 1em;
+  }
+
+  .spanHeadline p{
+    font-size:20px;
   }
 
   .titleItems:hover .backgroundImage {
@@ -199,6 +203,11 @@
     opacity: 0.6;
   }
 
+  }
+
+  .projects h2{
+    font-size: 2em;
+    margin-bottom: 1em;
   }
 
 

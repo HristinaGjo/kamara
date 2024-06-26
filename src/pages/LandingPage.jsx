@@ -1,12 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import classes from "../styles/landingPage.module.css"
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { useNavigate } from "react-router-dom";
 import landingPageImg from "../assets/landingPageImg.webp"
+import { useLocation } from "react-router-dom";
 
 
 const LandingPage = () => {
+
+  const location=useLocation();
+
+  useEffect (() =>{
+      window.scrollTo(0,0);
+  }, [location])
 
   const [activeIndex, setActiveIndex] = useState(null);
   const navigate = useNavigate();
@@ -37,7 +44,7 @@ const LandingPage = () => {
       <Navbar/>
     <div className={classes.titleItems} data-active-index={activeIndex}>
       <div className={classes.titleItem}>
-      <div className={classes.projects}><p className={classes.headline} >PROJECTS [04]</p></div>
+      <div className={classes.projects}><h2 className={classes.headline} >PROJECTS [04]</h2></div>
        {titles.map((item,index) =>(
         <div
         key={index}
