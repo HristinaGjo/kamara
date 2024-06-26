@@ -23,19 +23,20 @@ const LandingPage = () => {
 
 
   const titles = [
-    {title:"Echoes", className:classes.titleLink},
-    {title:"About", className:classes.titleLink},
-    {title:"Contact", className:classes.titleLink},
-    /* {title:"Dystopia", className:classes.titleLink},*/
+    {title:"Echoes",  headline:"[01] A JOURNEY INTO FUTURE REALMS", className:classes.titleLink},
+    {title:"Odyssey", headline:"[02] ENCOUNTERS WITH THE UNKNOWN",className:classes.titleLink},
+    {title:"Cracker", headline:"[03] THE SHADOW OF NEON REALITIES", className:classes.titleLink},
+    {title:"Dystopia", headline:"[04] ECHOES OF A FALLEN WORLD", className:classes.titleLink},
   ];
   
 
   return ( 
     <>
     <div className={classes.pageCtn}>
-     {/* <Navbar/> */}
+      <Navbar/>
     <div className={classes.titleItems} data-active-index={activeIndex}>
       <div className={classes.titleItem}>
+      <div className={classes.projects}><span className={classes.headline} >PROJECTS [4]</span></div>
        {titles.map((item,index) =>(
         <div
         key={index}
@@ -43,14 +44,17 @@ const LandingPage = () => {
         onMouseOver={() => handleMouseOver(index)}
         onClick={() => handleClick(item.title)}
         > 
-        <h1>{item.title}</h1>
+        <div className={classes.titleProjects}>
+        <span className={classes.spanTitle}>{item.title}</span>
+          <span className={classes.spanHeadline}>{item.headline}</span>
+        </div>
         </div>
       ))}
     </div>
     <div className={classes.backgroundPattern}></div>
     <div className={classes.backgroundImage}></div>
     </div>
-{/* <Footer/> */}
+ <Footer/>
 
     </div>
 

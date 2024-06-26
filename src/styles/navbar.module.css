@@ -6,7 +6,9 @@
   /*padding: 2em 2em 0em; */
   box-sizing: border-box;
   z-index: 1;
+  text-transform: uppercase;
   /*padding-bottom: 2em;*/
+  font-size: 14px;
 }
 
 .navbarRight{
@@ -20,7 +22,7 @@
 @media (max-width: 768px) {
 
   .navbarCtn{
-    font-size: 0.875rem;
+    font-size: 14px;
   }
 
   .navbarRight{
