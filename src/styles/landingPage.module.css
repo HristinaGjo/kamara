@@ -11,11 +11,11 @@
   }
   
   .titleItems{
-    height: 100vh;
+    height:100dvh;
     display: flex;
-    justify-content: start;
-    align-items: end;
-    margin-bottom: 10em;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 10em; */
   }
   
   .titleItem {
@@ -55,7 +55,7 @@
 
     background-position: center 40%;
     background-size: 110vmax;
-    opacity: 0.5;
+    opacity: 0.6;
 
     transition: opacity 800ms ease,
     background-size 800ms ease,
@@ -83,7 +83,7 @@
   /* Background size and opacity changes on hover */
   .titleItems:hover .backgroundImage {
     background-size: 95vw;
-    opacity: 0.3;
+    opacity: 0.4;
   }
   
   .footer {

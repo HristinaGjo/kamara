@@ -6,16 +6,21 @@ import Echoes from './pages/Echoes';
 import Odyssey from './pages/Odyssey'; // Import Odyssey component
 import Cracker from './pages/Cracker';
 import Dystopia from './pages/Dystopia'
+import Work from './pages/Work'
+import Contact from './pages/Contact';
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<LandingPage />} />
+      <Route path="/work" element={<Work />} />
       <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} /> 
       <Route path="/echoes" element={<Echoes />} />
       <Route path="/odyssey" element={<Odyssey />} /> 
       <Route path="/cracker" element={<Cracker />} /> 
       <Route path="/dystopia" element={<Dystopia />} /> 
+  
     </Routes>
   );
 }

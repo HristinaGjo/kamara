@@ -5,8 +5,7 @@ import Navbar from "../components/Navbar";
 import { useNavigate } from "react-router-dom";
 
 
-
-const LandingPage = () => {
+const Work = () => {
 
   const [activeIndex, setActiveIndex] = useState(null);
   const navigate = useNavigate();
@@ -18,28 +17,23 @@ const LandingPage = () => {
 
   const handleClick = (title) => {
     setActiveIndex (null);
-    let route
-
-    if (title.includes (" ")) {
-      route = title.split(" ")[1].toLowerCase()
-    } else{
-      route = title.toLowerCase()
-    }
-    navigate(`${route}`)
+    const route = title.toLowerCase()
+    navigate(`/${route}`)
   }
 
 
   const titles = [
-    {title:"01 Work", className:classes.titleLink},
-    {title:"02 About", className:classes.titleLink},
-    {title:"Contact", className:classes.titleLink},
+    {title:"Echoes", className:classes.titleLink},
+    {title:"Odyssey", className:classes.titleLink},
+    {title:"Cracker", className:classes.titleLink},
+    {title:"Dystopia", className:classes.titleLink},
   ];
   
 
   return ( 
     <>
     <div className={classes.pageCtn}>
-    {/*  <Navbar/> */}
+      <Navbar/>
     <div className={classes.titleItems} data-active-index={activeIndex}>
       <div className={classes.titleItem}>
        {titles.map((item,index) =>(
@@ -54,11 +48,9 @@ const LandingPage = () => {
       ))}
     </div>
     <div className={classes.backgroundPattern}></div>
-    <div className={classes.backgroundImage}>
-      <img />
+    <div className={classes.backgroundImage}></div>
     </div>
-    </div>
-{ /* <Footer/> */}
+ <Footer/>
 
     </div>
 
@@ -66,4 +58,4 @@ const LandingPage = () => {
    );
 }
  
-export default LandingPage;
+export default Work;
