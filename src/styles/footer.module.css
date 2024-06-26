@@ -3,6 +3,8 @@
     grid-template-columns: repeat(2,1fr);  
     text-transform: uppercase;
     font-size: 14px;
+   /*font-family: "Martian Mono", monospace; */
+   font-family: "Inter", "Avenir", Helvetica, Arial, sans-serif;
 }
 
 .rightCtn{

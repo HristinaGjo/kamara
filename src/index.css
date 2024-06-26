@@ -5,7 +5,7 @@
   /*font-family: "Instrument Serif", serif; */
   /*font-family: "Neue Montreal", sans-serif;*/
   /*font-family: "Thunder", sans-serif;*/
-  font-family: "Barlow Condensed", sans-serif ;
+
   line-height: 1;
   font-weight: 400;
   margin: 0;
@@ -45,6 +45,9 @@ span {
   line-height: 120%;
   letter-spacing: 0%;
   font-weight: 300;
+  /*font-family: Verdana, Geneva, sans-serif;*/
+ /* font-family: Helvetica, Arial, sans-serif; */
+ font-family: "Inter", "Avenir", Helvetica, Arial, sans-serif;
 }
 
 h1{
@@ -55,6 +58,8 @@ h1{
   line-height: 100%;
   font-weight: 600;
   letter-spacing: -5%;
+  /*font-family: "Barlow Condensed", sans-serif ;*/
+  font-family: "NT Dapper", sans-serif;
   /* color: transparent; */
   /* -webkit-text-stroke: 1px white; */
 }
@@ -68,6 +73,8 @@ h2{
   font-weight: 300;
   letter-spacing: -5%;
   text-transform: uppercase;
+  /*font-family: "Martian Mono", monospace; */
+  font-family: "Neue Montreal", sans-serif ;
 }
 
 p{
@@ -76,6 +83,8 @@ p{
   padding: 0;
   line-height: 120%;
   font-weight: 350;
+ /* font-family: "Martian Mono", monospace; */
+ font-family: "Inter", "Avenir", Helvetica, Arial, sans-serif;
 }
 
 

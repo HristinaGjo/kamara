@@ -9,6 +9,8 @@
   text-transform: uppercase;
   /*padding-bottom: 2em;*/
   font-size: 14px;
+ /* font-family: "Martian Mono", monospace; */
+ font-family: "Inter", "Avenir", Helvetica, Arial, sans-serif;
 }
 
 .navbarRight{
