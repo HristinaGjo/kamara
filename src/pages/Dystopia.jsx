@@ -51,7 +51,10 @@ const Dystopia = () => {
              ref={section01Ref}
              id="volume01"
              >
-                <h1>Dystopia-<br/>Echoes of a Fallen World</h1>
+                <div className={classes.headline}>
+                        <h1>Dystopia</h1>
+                        <h2>Echoes of a Fallen World</h2>
+                    </div>
                 <div className={classes.textSpan}>
                 <span>In a world where the future has unraveled into chaos, Dystopia tells the story of survival and 
                     rebellion against the backdrop of a fallen society. This series explores the lives of two protagonists who navigate 
@@ -83,7 +86,10 @@ const Dystopia = () => {
                 </div>
             </section> */}
                 <section className={`${classes.container} ${classes.section03}`}>
-                <h1>Dystopia-<br/>Echoes of a Fallen World</h1>
+                    <div className={classes.headline}>
+                        <h1>Dystopia</h1>
+                        <h2>Echoes of a Fallen World</h2>
+                    </div>
                 <div className={classes.textSpan}>
                 <span> Through their eyes, Dystopia reveals a world where the lines between past and future blur,
                      where every shadow holds a story, and every burst of neon light signals a moment of defiance. 
@@ -107,8 +113,11 @@ const Dystopia = () => {
             <section className={`${classes.container} ${classes.section05}`}>
           <Link to="/" className={classes.nextProject}>
               <div className={classes.textNextProject}>
-                <h1>Return to the beginning<br/></h1>
-                <span> [Back to Home Page &rarr;]</span>
+                <div className={classes.headline}>
+                <h1>Return </h1>
+                <h2>to the beginning...</h2>
+                </div>
+                <span className={classes.textNext}> [Back to Home Page &rarr;]</span>
               </div>
               <img className={`${classes.img} ${classes.imgNextProject}`} src={imgNextProject} alt="image 4"/>
           </Link>

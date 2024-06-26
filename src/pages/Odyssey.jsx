@@ -104,8 +104,11 @@ const Odyssey = () => {
             <section className={`${classes.container} ${classes.section05}`}>
           <Link to="/cracker#volume01" className={classes.nextProject}>
               <div className={classes.textNextProject}>
-                <h1>Cracker-<br/>A Journey into Future Realms</h1>
-                <span> [Next Project &rarr;]</span>
+                <div className={classes.headline}>
+                <h1>Cracker</h1>
+                <h2>A Journey into Future Realms</h2>
+                </div>
+                <span className={classes.textNext}> [Next Project &rarr;]</span>
               </div>
               <img className={`${classes.img} ${classes.imgNextProject}`} src={imgNextProject} alt="image 4"/>
           </Link>

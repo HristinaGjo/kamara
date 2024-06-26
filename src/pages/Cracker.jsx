@@ -47,8 +47,11 @@ const Cracker = () => {
             <section className={`${classes.container} ${classes.section01}`}
              ref={section01Ref}
              id="volume01"
-             >
-                <h1>Cracker-<br/>The Shadow of Neon Realities</h1>
+             >  
+             <div className={classes.headline}>
+                <h1>Cracker</h1>
+                <h2>The Shadow of Neon Realities</h2>
+                </div>
                 <div className={classes.textSpan}>
                 <span>In a dystopian future the world of Cracker comes to life through the lens 
                     of the artist who captures the gritty essence of cyberpunk. 
@@ -79,7 +82,10 @@ const Cracker = () => {
                 </div>
             </section> */}
                 <section className={`${classes.container} ${classes.section03}`}>
-                <h1>Cracker-<br/>The Shadow of Neon Realities</h1>
+                <div className={classes.headline}>
+                <h1>Cracker</h1>
+                <h2>The Shadow of Neon Realities</h2>
+                </div>
                 <div className={classes.textSpan}>
                 <span> This series follows the journey of a lone protagonist, known only as Cracker, 
                         a rogue hacker navigating a world dominated by technology and corruption.
@@ -103,8 +109,11 @@ const Cracker = () => {
             <section className={`${classes.container} ${classes.section05}`}>
           <Link to="/dystopia#volume01" className={classes.nextProject}>
               <div className={classes.textNextProject}>
-                <h1>Dystopia-<br/>Echoes of a Fallen World</h1>
-                <span> [Next Project &rarr;]</span>
+                <div className={classes.headline}>
+                <h1>Dystopia</h1>
+                <h2>Echoes of a Fallen World</h2>
+                </div>
+                <span className={classes.textNext}> [Next Project &rarr;]</span>
               </div>
               <img className={`${classes.img} ${classes.imgNextProject}`} src={imgNextProject} alt="image 4"/>
           </Link>

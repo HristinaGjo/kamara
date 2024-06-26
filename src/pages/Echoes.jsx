@@ -95,7 +95,7 @@ const Echoes = () => {
                             <h1>Odyssey</h1>
                             <h2>Encounters with the Unknown</h2>
                             </div>
-                            <span> [Next Project &rarr;]</span>
+                            <span className={classes.textNext}> [Next Project &rarr;]</span>
                         </div>
                         <img className={`${classes.img} ${classes.imgNextProject}`} src={imgNextProject} alt="image 4" />
                     </Link>
