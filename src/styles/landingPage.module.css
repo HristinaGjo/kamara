@@ -128,6 +128,15 @@
       justify-content: center;
       overflow-y: hidden;
     }
+
+    .titleItems{
+      height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      margin-top: -.5em;
+    }
   
    .titleItem  {
     margin-bottom: 1em;
@@ -139,7 +148,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      opacity: 0.5;
+      opacity: 0.6;
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -185,6 +194,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    opacity: 0.6;
   }
 
   }
