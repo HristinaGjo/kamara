@@ -22,6 +22,7 @@ const Echoes = () => {
     }; */
     return (
         <>
+        <div className={classes.pageCtn}>
             <div className={classes.navbarCtn}>
                 <div className={classes.logo}>
                     <Link to="/">
@@ -40,7 +41,10 @@ const Echoes = () => {
 
             <div className={classes.container}>
                 <section className={`${classes.container} ${classes.section01}`}>
-                    <h1>Echoes-<br />A Journey into Future Realms</h1>
+                    <div className={classes.headline}>
+                    <h1>Echoes<br /></h1>
+                    <h2>A Journey into Future Realms</h2>
+                    </div>
                     <div className={classes.textSpan}>
                         <span>In the depths of the digital age, where humanity's aspirations meet the cutting edge of technology, 
                             lies the Echoes series—a photographic odyssey through realms yet uncharted, where pixels dance with 
@@ -63,7 +67,10 @@ const Echoes = () => {
                     </div>
                 </section>
                 <section className={`${classes.container} ${classes.section03}`}>
-                    <h1>Echoes-<br />A Journey into Future Realms</h1>
+                <div className={classes.headline}>
+                    <h1>Echoes<br /></h1>
+                    <h2>A Journey into Future Realms</h2>
+                    </div>
                     <div className={classes.textSpan}>
                         <span> Echoes is more than a collection of images; it is a narrative of our collective journey into the future.
                             Echoes invites introspection on the human condition amidst a digital age. 
@@ -84,12 +91,16 @@ const Echoes = () => {
                 <section className={`${classes.container} ${classes.section05}`}>
                     <Link to="/odyssey#volume01" className={classes.nextProject}>
                         <div className={classes.textNextProject}>
-                            <h1>Odyssey-<br />Encounters with the Unknown</h1>
+                            <div className={classes.headline}>  
+                            <h1>Odyssey</h1>
+                            <h2>Encounters with the Unknown</h2>
+                            </div>
                             <span> [Next Project &rarr;]</span>
                         </div>
                         <img className={`${classes.img} ${classes.imgNextProject}`} src={imgNextProject} alt="image 4" />
                     </Link>
                 </section>
+            </div>
             </div>
         </>
     );

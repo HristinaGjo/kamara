@@ -50,8 +50,11 @@ const Odyssey = () => {
             <section className={`${classes.container} ${classes.section01}`}
              ref={section01Ref}
              id="volume01"
-             >
-                <h1>Odyssey-<br/>Encounters with the Unknown</h1>
+             > 
+             <div className={classes.headline}>
+                <h1>Odyssey</h1>
+                <h2>Encounters with the Unknown</h2>
+                </div>
                 <div className={classes.textSpan}>
                 <span>Odyssey is more than a collection of sci-fi images; it is a narrative of exploration and discovery, 
                         a visual symphony that celebrates the boundless curiosity and indomitable spirit of humanity.
@@ -80,7 +83,10 @@ const Odyssey = () => {
                 </div>
             </section> */}
                 <section className={`${classes.container} ${classes.section03}`}>
-                <h1>Odyssey-<br/>Encounters with the Unknown</h1>
+                <div className={classes.headline}>
+                <h1>Odyssey</h1>
+                <h2>Encounters with the Unknown</h2>
+                </div>
                 <div className={classes.textSpan}>
                 <span> Through this series, we are invited to dream, to imagine, and to embark on our own odysseys, wherever they may lead. 
                 It is a testament to the fact that in the vast theater of the universe, the journey is just as important as the destination.
