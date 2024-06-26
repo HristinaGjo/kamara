@@ -20,7 +20,7 @@ const Cracker = () => {
       setTimeout(() => {
       if (hash === "#volume01" && section01Ref.current) {
         section01Ref.current.scrollIntoView({ behavior: "smooth" });
-      }}, 10);
+      }}, 20);
     }, [location]); 
 
 
@@ -48,13 +48,15 @@ const Cracker = () => {
              ref={section01Ref}
              id="volume01"
              >
-                <h1>Cracker-<br/>Encounters with the Unknown</h1>
+                <h1>Cracker-<br/>The Shadow of Neon Realities</h1>
                 <div className={classes.textSpan}>
-                <span>Odyssey is more than a collection of sci-fi images; it is a narrative of exploration and discovery, 
-                        a visual symphony that celebrates the boundless curiosity and indomitable spirit of humanity.
+                <span>In a dystopian future the world of Cracker comes to life through the lens 
+                    of the artist who captures the gritty essence of cyberpunk. 
                     </span>
-                    <span>In the heart of the journey, Odyssey delves into the mystery of the extraterrestrial.
-                    Shadows hint at the presence of beings from beyond our understanding, their forms elusive yet captivating. 
+                    <span>Through Cracker, the photographer invites viewers into a realm where the lines between man and machine blur
+                        and where the quest for truth is a perilous journey through darkness and light. 
+                        Each image is a chapter in Cracker's story, a narrative of resilience, rebellion 
+                        and the unyielding human spirit in the face of a cold, mechanized future.
                     </span>
                 </div>
                 <div className={classes.scroller}>
@@ -77,11 +79,17 @@ const Cracker = () => {
                 </div>
             </section> */}
                 <section className={`${classes.container} ${classes.section03}`}>
-                <h1>Cracker-<br/>Encounters with the Unknown</h1>
+                <h1>Cracker-<br/>The Shadow of Neon Realities</h1>
                 <div className={classes.textSpan}>
-                <span> Through this series, we are invited to dream, to imagine, and to embark on our own odysseys, wherever they may lead. 
-                It is a testament to the fact that in the vast theater of the universe, the journey is just as important as the destination.
-                    </span>
+                <span> This series follows the journey of a lone protagonist, known only as Cracker, 
+                        a rogue hacker navigating a world dominated by technology and corruption.
+                </span>
+                <span>Cracker is not just a portrayal of a character; 
+                    it is an exploration of the cyberpunk aesthetic and the themes of 
+                    rebellion, identity, and survival in a world where humanity and machinery are inextricably intertwined. 
+                    Through this series, viewers are invited to delve into a realm where the boundaries of reality and digital illusion blur, 
+                    and the fight for freedom and truth is fought in the shadows.
+                </span>
                 </div>
             </section>
 
@@ -95,7 +103,7 @@ const Cracker = () => {
             <section className={`${classes.container} ${classes.section05}`}>
           <Link to="/dystopia#volume01" className={classes.nextProject}>
               <div className={classes.textNextProject}>
-                <h1>Wasteland-<br/>A Journey into Future Realms</h1>
+                <h1>Dystopia-<br/>Echoes of a Fallen World</h1>
                 <span> [Next Project &rarr;]</span>
               </div>
               <img className={`${classes.img} ${classes.imgNextProject}`} src={imgNextProject} alt="image 4"/>

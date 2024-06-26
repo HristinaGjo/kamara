@@ -23,7 +23,7 @@ const Odyssey = () => {
       setTimeout(() => {
       if (hash === "#volume01" && section01Ref.current) {
         section01Ref.current.scrollIntoView({ behavior: "smooth" });
-      }}, 10);
+      }}, 20);
     }, [location]); 
 
 

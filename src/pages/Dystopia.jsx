@@ -23,7 +23,7 @@ const Dystopia = () => {
       setTimeout(() => {
       if (hash === "#volume01" && section01Ref.current) {
         section01Ref.current.scrollIntoView({ behavior: "smooth" });
-      }}, 10);
+      }}, 20);
     }, [location]); 
 
 
@@ -51,13 +51,16 @@ const Dystopia = () => {
              ref={section01Ref}
              id="volume01"
              >
-                <h1>Dystopia-<br/>Encounters with the Unknown</h1>
+                <h1>Dystopia-<br/>Echoes of a Fallen World</h1>
                 <div className={classes.textSpan}>
-                <span>Odyssey is more than a collection of sci-fi images; it is a narrative of exploration and discovery, 
-                        a visual symphony that celebrates the boundless curiosity and indomitable spirit of humanity.
+                <span>In a world where the future has unraveled into chaos, Dystopia tells the story of survival and 
+                    rebellion against the backdrop of a fallen society. This series explores the lives of two protagonists who navigate 
+                    the neon-lit ruins of their civilization.
                     </span>
-                    <span>In the heart of the journey, Odyssey delves into the mystery of the extraterrestrial.
-                    Shadows hint at the presence of beings from beyond our understanding, their forms elusive yet captivating. 
+                    <span>The two characters, rebels in their own right, use neon sticks as both weapons and beacons, 
+                        symbols of defiance against the encroaching darkness. The neon fire they ignite serves as a reminder of 
+                        the power they hold, a flickering hope in an otherwise bleak reality. 
+                        Their journey is one of resilience and determination, as they fight to carve out a space for humanity amidst the ruins.
                     </span>
                 </div>
                 <div className={classes.scroller}>
@@ -80,10 +83,16 @@ const Dystopia = () => {
                 </div>
             </section> */}
                 <section className={`${classes.container} ${classes.section03}`}>
-                <h1>Dystopia-<br/>Encounters with the Unknown</h1>
+                <h1>Dystopia-<br/>Echoes of a Fallen World</h1>
                 <div className={classes.textSpan}>
-                <span> Through this series, we are invited to dream, to imagine, and to embark on our own odysseys, wherever they may lead. 
-                It is a testament to the fact that in the vast theater of the universe, the journey is just as important as the destination.
+                <span> Through their eyes, Dystopia reveals a world where the lines between past and future blur,
+                     where every shadow holds a story, and every burst of neon light signals a moment of defiance. 
+                     This series invites viewers to witness the stark contrasts of this new reality—where technology's 
+                     remnants clash with the raw force of nature, and where the human spirit endures against all odds.
+                    </span>
+                    <span>
+                    Dystopia is more than a collection of images; it is a narrative of survival, resistance 
+                    and the enduring human drive to find light in the darkest of times.
                     </span>
                 </div>
             </section>
@@ -98,7 +107,7 @@ const Dystopia = () => {
             <section className={`${classes.container} ${classes.section05}`}>
           <Link to="/" className={classes.nextProject}>
               <div className={classes.textNextProject}>
-                <h1>Thanks for watching<br/></h1>
+                <h1>Return to the beginning<br/></h1>
                 <span> [Back to Home Page &rarr;]</span>
               </div>
               <img className={`${classes.img} ${classes.imgNextProject}`} src={imgNextProject} alt="image 4"/>
