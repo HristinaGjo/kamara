@@ -60,6 +60,7 @@ const Echoes = () => {
                         <span>[<span>scroll &rarr;</span>]</span>
                     </div> 
                 </section>
+                
                 <section className={`${classes.container} ${classes.section02}`}>
                     <div className={classes.img}>
                         <img className={`${classes.img} ${classes.img07}`} src={img7} alt="image 7" />
@@ -67,10 +68,12 @@ const Echoes = () => {
                         <img className={`${classes.img} ${classes.img09}`} src={img9} alt="image 9" />
                     </div>
                 </section>
+
                 <section className={`${classes.container} ${classes.section03}`}>
                 <div className={classes.headline}>
                     <h1>Echoes<br /></h1>
                     <h2>A Journey into Future Realms</h2>
+                    <span className={classes.textScroll}>[<span>scroll &rarr;</span>]</span>
                     </div>
                     <div className={classes.textSpan}>
                         <span> Echoes is more than a collection of images; it is a narrative of our collective journey into the future.
@@ -81,7 +84,11 @@ const Echoes = () => {
                             to the boundless creativity and limitless potential of the human spirit in the age of tomorrow.
                         </span>
                     </div>
+                    <div className={classes.scrollerMobile}>
+                        <span>[<span>scroll &rarr;</span>]</span>
+                    </div> 
                 </section>
+
                 <section className={`${classes.container} ${classes.section04}`}>
                     <div className={classes.img}>
                         <img className={`${classes.img} ${classes.img01}`} src={img1} alt="image 1" />

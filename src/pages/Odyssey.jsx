@@ -64,9 +64,9 @@ const Odyssey = () => {
                     Shadows hint at the presence of beings from beyond our understanding, their forms elusive yet captivating. 
                     </span>
                 </div>
-                <div className={classes.scroller}>
-                <span>[<span>scroll &rarr;</span>]</span>
-            </div>
+                <div className={classes.scrollerMobile}>
+                        <span>[<span>scroll &rarr;</span>]</span>
+                    </div> 
             </section>
             <section className={`${classes.container} ${classes.section02}`}>
                 <div className={classes.img}>
@@ -87,12 +87,16 @@ const Odyssey = () => {
                 <div className={classes.headline}>
                 <h1>Odyssey</h1>
                 <h2>Encounters with the Unknown</h2>
+                <span className={classes.textScroll}>[<span>scroll &rarr;</span>]</span>
                 </div>
                 <div className={classes.textSpan}>
                 <span> Through this series, we are invited to dream, to imagine, and to embark on our own odysseys, wherever they may lead. 
                 It is a testament to the fact that in the vast theater of the universe, the journey is just as important as the destination.
                     </span>
                 </div>
+                <div className={classes.scrollerMobile}>
+                        <span>[<span>scroll &rarr;</span>]</span>
+                    </div> 
             </section>
 
             <section className={`${classes.container} ${classes.section04}`}>

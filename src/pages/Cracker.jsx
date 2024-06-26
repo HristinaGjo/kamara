@@ -51,6 +51,7 @@ const Cracker = () => {
              <div className={classes.headline}>
                 <h1>Cracker</h1>
                 <h2>The Shadow of Neon Realities</h2>
+                <span className={classes.textScroll}>[<span>scroll &rarr;</span>]</span>
                 </div>
                 <div className={classes.textSpan}>
                 <span>In a dystopian future the world of Cracker comes to life through the lens 
@@ -62,9 +63,9 @@ const Cracker = () => {
                         and the unyielding human spirit in the face of a cold, mechanized future.
                     </span>
                 </div>
-                <div className={classes.scroller}>
-                <span>[<span>scroll &rarr;</span>]</span>
-            </div>
+                <div className={classes.scrollerMobile}>
+                        <span>[<span>scroll &rarr;</span>]</span>
+                </div> 
             </section>
             <section className={`${classes.container} ${classes.section02}`}>
                 <div className={classes.img}>
@@ -85,6 +86,7 @@ const Cracker = () => {
                 <div className={classes.headline}>
                 <h1>Cracker</h1>
                 <h2>The Shadow of Neon Realities</h2>
+                <span className={classes.textScroll}>[<span>scroll &rarr;</span>]</span>
                 </div>
                 <div className={classes.textSpan}>
                 <span> This series follows the journey of a lone protagonist, known only as Cracker, 
@@ -97,6 +99,9 @@ const Cracker = () => {
                     and the fight for freedom and truth is fought in the shadows.
                 </span>
                 </div>
+                <div className={classes.scrollerMobile}>
+                        <span>[<span>scroll &rarr;</span>]</span>
+                    </div> 
             </section>
 
             <section className={`${classes.container} ${classes.section04}`}>

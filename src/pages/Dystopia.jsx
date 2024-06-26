@@ -54,6 +54,7 @@ const Dystopia = () => {
                 <div className={classes.headline}>
                         <h1>Dystopia</h1>
                         <h2>Echoes of a Fallen World</h2>
+                        <span className={classes.textScroll}>[<span>scroll &rarr;</span>]</span>
                     </div>
                 <div className={classes.textSpan}>
                 <span>In a world where the future has unraveled into chaos, Dystopia tells the story of survival and 
@@ -66,7 +67,7 @@ const Dystopia = () => {
                         Their journey is one of resilience and determination, as they fight to carve out a space for humanity amidst the ruins.
                     </span>
                 </div>
-                <div className={classes.scroller}>
+                <div className={classes.scrollerMobile}>
                 <span>[<span>scroll &rarr;</span>]</span>
             </div>
             </section>
@@ -89,6 +90,7 @@ const Dystopia = () => {
                     <div className={classes.headline}>
                         <h1>Dystopia</h1>
                         <h2>Echoes of a Fallen World</h2>
+                        <span className={classes.textScroll}>[<span>scroll &rarr;</span>]</span>
                     </div>
                 <div className={classes.textSpan}>
                 <span> Through their eyes, Dystopia reveals a world where the lines between past and future blur,
@@ -101,6 +103,9 @@ const Dystopia = () => {
                     and the enduring human drive to find light in the darkest of times.
                     </span>
                 </div>
+                <div className={classes.scrollerMobile}>
+                <span>[<span>scroll &rarr;</span>]</span>
+            </div>
             </section>
 
             <section className={`${classes.container} ${classes.section04}`}>

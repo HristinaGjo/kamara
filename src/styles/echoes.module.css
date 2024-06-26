@@ -142,21 +142,6 @@
     margin-top: 2em;
   }
 
- /* .img1,
-  .img2,
-  .img3,
-  .img4,
-  .img5
-  .img6,
-  .img8
-  .img9 {
-    flex: 1;
-  }
-
-  .img7 {
-    flex: 2;
-  } */
-
   ::-webkit-scrollbar {
     display: none;
   }
@@ -165,13 +150,10 @@
     text-transform: uppercase;
   }
 
+  .scrollerMobile {
+    display: none;
+  }
 
-
-  /* Add this at the end of your CSS file */
-/* .fadeOut {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-} */
 
   @media (max-width: 768px) {
  
@@ -285,6 +267,10 @@
 
     .textScroll {
       display: none;
+    }
+
+    .scrollerMobile{
+      display: block;
     }
 
 }
