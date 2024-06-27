@@ -64,7 +64,7 @@
     position: absolute;
     left: 0px;
     top: 0px;
-    z-index: -2;
+    z-index: -1;
 
     background-position: center 40%;
     background-size: 110vmax;
@@ -136,7 +136,7 @@
     }
   
     .backgroundImage {
-      position:fixed;
+      position:absolute;
       top: 0;
       left: 0;
       width: 100%;
