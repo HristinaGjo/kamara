@@ -10,14 +10,22 @@ import { useLocation } from "react-router-dom";
 const LandingPage = () => {
 
   const location=useLocation();
-
+  const navigate = useNavigate();
 
   useEffect(() => {
+    window.scrollTo(0, 0); // Reset scroll position on landing page mount
+    window.scroll ({top:0, left:0, behavior:"smooth"})
+  }, [location.pathname]); 
+
+
+ /* useEffect(() => {
     // Reset scroll position only when navigating back to landing page
     if (location.hash === "#home") {
       window.scrollTo(0, 0);
     }
-  }, [location]);
+  }, [location]);  */
+
+
  /* const pageCtnRef = useRef (null);
 
    useEffect(() => {
@@ -38,7 +46,7 @@ const LandingPage = () => {
   }, [location]) */
 
   const [activeIndex, setActiveIndex] = useState(null);
-  const navigate = useNavigate();
+ 
 
 
   const handleMouseOver = (index) => {
