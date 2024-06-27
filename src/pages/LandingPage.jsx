@@ -13,6 +13,7 @@ const LandingPage = () => {
 
   useEffect (() =>{
     console.log("Navigated to:", location.pathname); 
+    console.log("Current scroll position:", window.scrollX, window.scrollY);
       window.scrollTo(0,0);
       window.scroll ({top:0, left:0, behavior:"smooth"})
   }, [location])
