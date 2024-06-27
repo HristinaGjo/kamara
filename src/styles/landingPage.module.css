@@ -27,6 +27,7 @@
   justify-content: start;
   align-items: center;
   margin-top: -.5em;
+  position: fixed;
 }
 
 .projects{
