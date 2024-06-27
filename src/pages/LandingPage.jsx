@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import classes from "../styles/landingPage.module.css"
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
@@ -10,13 +10,24 @@ import { useLocation } from "react-router-dom";
 const LandingPage = () => {
 
   const location=useLocation();
+  const pageCtnRef = useRef (null);
 
-  useEffect (() =>{
+  useEffect(() => {
+    const hash = location.hash;
+    console.log("Navigated to:", location.pathname); 
+
+    setTimeout(() => {
+    if (hash === "#home" && pageCtnRef.current) {
+      pageCtnRef.current.scrollIntoView({ behavior: "smooth" });
+    }}, 20);
+  }, [location]); 
+
+ /* useEffect (() =>{
     console.log("Navigated to:", location.pathname); 
     console.log("Current scroll position:", window.scrollX, window.scrollY);
       window.scrollTo(0,0);
       window.scroll ({top:0, left:0, behavior:"smooth"})
-  }, [location])
+  }, [location]) */
 
   const [activeIndex, setActiveIndex] = useState(null);
   const navigate = useNavigate();
@@ -43,7 +54,9 @@ const LandingPage = () => {
 
   return ( 
     <>
-    <div className={classes.pageCtn}>
+    <div className={classes.pageCtn} ref={pageCtnRef}
+    id="#home"
+    >
       <Navbar/>
     <div className={classes.titleItems} data-active-index={activeIndex}>
       <div className={classes.titleItem}>
