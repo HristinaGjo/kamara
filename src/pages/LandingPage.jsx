@@ -10,9 +10,9 @@ import { useLocation } from "react-router-dom";
 const LandingPage = () => {
 
   const location=useLocation();
-  const pageCtnRef = useRef (null);
+ /* const pageCtnRef = useRef (null);
 
-  useEffect(() => {
+   useEffect(() => {
     const hash = location.hash;
     console.log("Navigated to:", location.pathname); 
 
@@ -20,14 +20,14 @@ const LandingPage = () => {
     if (hash === "#home" && pageCtnRef.current) {
       pageCtnRef.current.scrollIntoView({ behavior: "smooth" });
     }}, 20);
-  }, [location]); 
+  }, [location]); */
 
- /* useEffect (() =>{
+  useEffect (() =>{
     console.log("Navigated to:", location.pathname); 
     console.log("Current scroll position:", window.scrollX, window.scrollY);
       window.scrollTo(0,0);
       window.scroll ({top:0, left:0, behavior:"smooth"})
-  }, [location]) */
+  }, [location]) 
 
   const [activeIndex, setActiveIndex] = useState(null);
   const navigate = useNavigate();
@@ -54,9 +54,7 @@ const LandingPage = () => {
 
   return ( 
     <>
-    <div className={classes.pageCtn} ref={pageCtnRef}
-    id="#home"
-    >
+    <div className={classes.pageCtn}>
       <Navbar/>
     <div className={classes.titleItems} data-active-index={activeIndex}>
       <div className={classes.titleItem}>

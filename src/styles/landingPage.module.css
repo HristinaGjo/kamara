@@ -108,13 +108,13 @@
       box-sizing: border-box;
       padding: 1em 1em;
       height: 100dvh;
+      width: 100vw;
       overflow: hidden;
       display: flex;
       flex-direction: column;
       justify-content: center;
       overflow-y: hidden;
       overflow-x: hidden;
-      width: 1000vw;
     }
 
     .titleItems{
