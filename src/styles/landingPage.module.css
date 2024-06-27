@@ -10,15 +10,6 @@
     overflow-y: hidden;
   }
   
-  
- /* .titleItems{
-    height:100dvh;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    /* margin-top: 4em; 
-    /* margin-bottom: 10em; 
-  } */
 
   .titleItems{
     height: 100dvh;
@@ -27,6 +18,8 @@
     justify-content: start;
     align-items: center;
     margin-top: -1em;
+    position: relative;
+    z-index: 1;
   }
 
   .projects{
@@ -67,7 +60,7 @@
 
    /* background-image: url("https://images.pexels.com/photos/4904563/pexels-photo-4904563.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");*/
    /* background-image: url("https://images.pexels.com/photos/9525724/pexels-photo-9525724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); */
-   background-image: url("../assets/landingPageImg.webp");
+    background-image: url("../assets/landingPageImg.webp");
     position: absolute;
     left: 0px;
     top: 0px;
@@ -139,7 +132,7 @@
       align-items: start;
       margin-top: -.5em;
       opacity: 0.9;
-      z-index: 1;
+      /*z-index: 1;*/
     }
   
     .backgroundImage {
@@ -149,10 +142,10 @@
       width: 100%;
       height: 100%;
       opacity: 0.5;
-      z-index: -2;
+      z-index: -1;
       background-size: cover;
       background-repeat: no-repeat;
-      background-attachment: fixed;
+      /*background-attachment: fixed;
       /*height: 100vh;*/
       transition: none !important;
     }
@@ -163,26 +156,26 @@
     }
 
     
-  .projects{
-    font-size: 20px;
-    margin-top: 2em;
-  }
+    .projects{
+      font-size: 20px;
+      margin-top: 2em;
+    }
 
-  .titleItem {
-    text-transform: uppercase;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1em;
-  }
+    .titleItem {
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1em;
+    }
 
-  .titleProjects{
-    display: flex;
-    flex-direction: column;
-  }
+    .titleProjects{
+      display: flex;
+      flex-direction: column;
+    }
 
-  .spanTitle{
-    line-height: 150%;
-  }
+    .spanTitle{
+      line-height: 150%;
+    }
 
   .spanHeadline{
     margin-bottom: 1em;
@@ -194,10 +187,8 @@
 
   .titleItems:hover .backgroundImage {
     transition: none;
-    background-size: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     opacity: 0.5;
   }
 
