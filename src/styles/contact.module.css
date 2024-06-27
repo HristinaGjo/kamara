@@ -124,7 +124,7 @@
 
   .backgroundImage{
     position: fixed;
-    opacity: 0.3 !important;
+    opacity: 0.4 !important;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
