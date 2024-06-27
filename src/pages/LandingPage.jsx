@@ -12,6 +12,7 @@ const LandingPage = () => {
   const location=useLocation();
 
   useEffect (() =>{
+    console.log("Navigated to:", location.pathname); 
       window.scrollTo(0,0);
   }, [location])
 

@@ -64,7 +64,6 @@
     position: absolute;
     left: 0px;
     top: 0px;
-    z-index: -1;
 
     background-position: center 40%;
     background-size: 110vmax;
@@ -122,6 +121,7 @@
       flex-direction: column;
       justify-content: center;
       overflow-y: hidden;
+      
     }
 
     .titleItems{
@@ -132,19 +132,21 @@
       align-items: start;
       margin-top: -.5em;
       opacity: 0.9;
+      z-index: 1000;
+    
       /*z-index: 1;*/
     }
   
     .backgroundImage {
-      position:absolute;
+      position:fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       opacity: 0.5;
-      z-index: -1;
       background-size: cover;
       background-repeat: no-repeat;
+      z-index: -1000;
       /*background-attachment: fixed;
       /*height: 100vh;*/
       transition: none !important;
