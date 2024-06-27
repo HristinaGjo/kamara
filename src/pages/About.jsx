@@ -30,13 +30,14 @@ const About = () => {
                 <h2>behind kamára</h2>
             </div>
             <div className={classes.textSpan}>
-                        <span>In the depths of the digital age, where humanity's aspirations meet the cutting edge of technology, 
-                            lies the Echoes series—a photographic odyssey through realms yet uncharted, where pixels dance with 
-                            imagination and reality blurs with dreams.
+                        <span>Isabella Thornton is a visionary photographer based in New York and known for her captivating and evocative imagery.
+                             With a career spanning over a decade, Isabella has carved a niche for herself in the world of photography, 
+                             blending elements of surrealism, storytelling, and raw human emotion in every frame. 
                         </span>
-                        <span>As the series unfolds, each photograph echoes the aspirations and dilemmas of a civilization on the brink of tomorrow.
-                            It challenges perceptions of what lies ahead, prompting contemplation on the ethical implications of our technological 
-                            pursuits and the essence of humanity in an increasingly digital landscape.
+                        <span>Isabella’s style is a unique fusion of cyberpunk aesthetics and dystopian themes, often portraying 
+                            characters in futuristic, neon-lit environments. Her signature technique involves the use of stark contrasts, 
+                            vivid colors, and intricate compositions to tell compelling stories. Each photograph is meticulously crafted, 
+                            often requiring elaborate sets and post-production techniques to achieve her distinctive look.
                         </span>
                     </div>
                     

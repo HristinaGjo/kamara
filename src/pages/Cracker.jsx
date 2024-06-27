@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from "react";
-import classes from "../styles/echoes.module.css"
+import classes from "../styles/cracker.module.css"
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import img1 from "../assets/cracker-1.webp"
-import img2 from "../assets/cracker-2.webp"
+import img2 from "../assets/cracker3.webp"
 import img3 from "../assets/cracker-3.webp"
 import img5 from "../assets/cracker-5.webp"
 import imgNextProject from "../assets/nextWl.webp"

@@ -26,7 +26,7 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    margin-top: -.5em;
+    margin-top: -1em;
   }
 
   .projects{
@@ -138,10 +138,7 @@
       justify-content: start;
       align-items: start;
       margin-top: -.5em;
-    }
-  
-   .titleItem  {
-    margin-bottom: 1em;
+      opacity: 0.9;
     }
   
     .backgroundImage {
@@ -150,7 +147,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      opacity: 0.4;
+      opacity: 0.5;
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -167,19 +164,18 @@
   .projects{
     font-size: 20px;
     margin-top: 2em;
-
   }
 
   .titleItem {
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
+    margin-bottom: 1em;
   }
 
   .titleProjects{
     display: flex;
     flex-direction: column;
-
   }
 
   .spanTitle{
@@ -200,7 +196,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    opacity: 0.4;
+    opacity: 0.5;
   }
 
   .projects h2{
@@ -220,9 +216,6 @@
   .titleLink:hover {
     opacity: 1 !important;
   }
-  
-
-  
 
   }
 
