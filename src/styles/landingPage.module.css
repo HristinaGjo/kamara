@@ -94,7 +94,7 @@
   top: 0px;
   z-index: -2;
 
-  background-position: center 40%;
+  background-position: top;
   background-size: 110vmax;
   opacity: 0.6;
 
@@ -106,19 +106,19 @@
 
 /* Change background positions based on the active index */
 .titleItems[data-active-index="0"] > .backgroundImage {
-  background-position: center 50%;
+  background-position: center 70%;
 }
 
 .titleItems[data-active-index="1"] > .backgroundImage {
-  background-position: center 60%;
+  background-position: center 55%;
 }
 
 .titleItems[data-active-index="2"] > .backgroundImage {
-  background-position: center 75%;
+  background-position: center 40%;
 }
 
 .titleItems[data-active-index="3"] > .backgroundImage {
-  background-position: center 90%;
+  background-position: top;
 }
 
 /* Background size and opacity changes on hover */
