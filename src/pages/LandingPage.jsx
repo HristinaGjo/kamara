@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import { useNavigate } from "react-router-dom";
 import landingPageImg from "../assets/landingPageImg.webp"
 import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 const LandingPage = () => {
@@ -12,10 +13,10 @@ const LandingPage = () => {
   const location=useLocation();
   const navigate = useNavigate();
 
-  useEffect(() => {
+  /* useEffect(() => {
     window.scrollTo(0, 0); // Reset scroll position on landing page mount
     window.scroll ({top:0, left:0, behavior:"smooth"})
-  }, [location.pathname]); 
+  }, [location.pathname]); */
 
 
  /* useEffect(() => {
@@ -70,8 +71,23 @@ const LandingPage = () => {
 
   return ( 
     <>
-    <div className={classes.pageCtn}>
-      <Navbar/>
+    
+    <div className={classes.navbarCtn}>
+            <div className={classes.logo}>
+                <Link to="/">
+            <span>[ kamára ]</span>
+            </Link>
+            </div>
+            <div className={classes.navbarRight}>
+                <Link to="/about">
+                <span>[ about ]</span>
+                </Link>
+                <Link to="/contact">
+                <span>[ contact ]</span>
+                </Link>
+            </div>
+        </div>
+        <div className={classes.pageCtn}>
     <div className={classes.titleItems} data-active-index={activeIndex}>
       <div className={classes.titleItem}>
       <div className={classes.projects}><h2 className={classes.headline} >PROJECTS [04]</h2></div>
@@ -94,9 +110,10 @@ const LandingPage = () => {
      {/* <img src={landingPageImg} /> */}
     </div>
     </div>
- <Footer/>
+{/* <Footer/> */}
+</div>
 
-    </div>
+
 
     </>
    );

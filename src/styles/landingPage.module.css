@@ -1,4 +1,4 @@
-.pageCtn {
+/*.pageCtn {
   box-sizing: border-box;
   padding: 2em 2em;
   width: 100vw;
@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: center;
   overflow-y: hidden;
-}
+} */
 
 
 /* .titleItems{
@@ -20,6 +20,27 @@
   /* margin-bottom: 10em; 
 } */
 
+.navbarCtn{
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  padding: 2em 2em;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  box-sizing: border-box;
+  z-index: 1;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Martian Mono", monospace;
+}
+
+.navbarRight{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 2em;
+}
+
 .titleItems{
   height: 100dvh;
   display: flex;
@@ -27,7 +48,6 @@
   justify-content: start;
   align-items: center;
   margin-top: -.5em;
-  position: fixed;
 }
 
 .projects{
@@ -107,20 +127,11 @@
   opacity: 0.4;
 }
 
-.footer {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  box-sizing: border-box;
-}
-
-
 
 /* Media queries for mobile screens */
 @media (max-width: 768px) {
   
-  .pageCtn {
+  /* .pageCtn {
     box-sizing: border-box;
     padding: 1em 1em;
     width: 100vw;
@@ -130,6 +141,25 @@
     flex-direction: column;
     justify-content: center;
     overflow-y: hidden;
+  } */
+
+  .navbarCtn{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding: 1.5em 1em 0 1em;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    box-sizing: border-box;
+    z-index: 1;
+    font-size: 12px;
+  }
+  
+  .navbarRight{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1em;
   }
 
   .titleItems{
@@ -138,11 +168,12 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    margin-top: -.5em;
+    position: fixed;
+    padding: 2em 1em 0 1em;
   }
 
- .titleItem  {
-  margin-bottom: 1em;
+  .titleItem  {
+    margin-bottom: 1em;
   }
 
   .backgroundImage {
@@ -210,6 +241,18 @@
   /* font-size: 2em;*/
   margin-bottom: .2em;
   font-size: 3.052rem;
+}
+
+.titleLink {
+  transition: opacity 1s;
+}
+
+.titleItem:hover .titleLink {
+  opacity: 1;
+}
+
+.titleLink:hover {
+  opacity: 1 !important;
 }
 
 

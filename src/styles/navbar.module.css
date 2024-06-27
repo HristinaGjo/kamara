@@ -10,8 +10,8 @@
   /*padding-bottom: 2em;*/
   font-size: 14px;
  /* font-family: "Martian Mono", monospace; */
- font-family: "Inter", "Avenir", Helvetica, Arial, sans-serif;
-z-index: 1000;
+  font-family: "Inter", "Avenir", Helvetica, Arial, sans-serif;
+  z-index: 1000;
 }
 
 .navbarRight{
