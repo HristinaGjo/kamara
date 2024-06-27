@@ -20,6 +20,7 @@
   }
 
   .container{
+    position: fixed;
     top: 0;
     left: 0;
     height: 100dvh;
@@ -98,7 +99,7 @@
   }
 
   .container{
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;

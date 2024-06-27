@@ -87,7 +87,7 @@ const LandingPage = () => {
                 </Link>
             </div>
         </div>
-        <div className={classes.pageCtn}>
+     
     <div className={classes.titleItems} data-active-index={activeIndex}>
       <div className={classes.titleItem}>
       <div className={classes.projects}><h2 className={classes.headline} >PROJECTS [04]</h2></div>
@@ -111,7 +111,6 @@ const LandingPage = () => {
     </div>
     </div>
 {/* <Footer/> */}
-</div>
 
 
 
