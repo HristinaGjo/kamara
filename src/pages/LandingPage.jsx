@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import classes from "../styles/landingPage.module.css"
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
@@ -9,31 +9,36 @@ import { useLocation } from "react-router-dom";
 
 const LandingPage = () => {
 
-  const location = useLocation();
-  const navigate = useNavigate();
+  const location=useLocation();
+
+
+  useEffect(() => {
+    // Reset scroll position only when navigating back to landing page
+    if (location.hash === "#home") {
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
+ /* const pageCtnRef = useRef (null);
+
+   useEffect(() => {
+    const hash = location.hash;
+    console.log("Navigated to:", location.pathname); 
+
+    setTimeout(() => {
+    if (hash === "#home" && pageCtnRef.current) {
+      pageCtnRef.current.scrollIntoView({ behavior: "smooth" });
+    }}, 20);
+  }, [location]); */
+
+ /* useEffect (() =>{
+    console.log("Navigated to:", location.pathname); 
+    console.log("Current scroll position:", window.scrollX, window.scrollY);
+      window.scrollTo(0,0);
+      window.scroll ({top:0, left:0, behavior:"smooth"})
+  }, [location]) */
 
   const [activeIndex, setActiveIndex] = useState(null);
-
-  // Restore scroll position on component mount
-  useEffect(() => {
-    const storedPosition = localStorage.getItem("landingPageScrollPosition");
-    if (storedPosition) {
-      window.scrollTo(0, parseInt(storedPosition, 10));
-    } else {
-      window.scrollTo(0, 0); // Scroll to top if no stored position
-    }
-  }, []);
-
-  // Save scroll position on page unload or navigation
-  useEffect(() => {
-    const handleUnload = () => {
-      localStorage.setItem("landingPageScrollPosition", window.scrollY);
-    };
-    window.addEventListener("beforeunload", handleUnload);
-    return () => {
-      window.removeEventListener("beforeunload", handleUnload);
-    };
-  }, []);
+  const navigate = useNavigate();
 
 
   const handleMouseOver = (index) => {

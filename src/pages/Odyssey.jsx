@@ -32,7 +32,7 @@ const Odyssey = () => {
 
         <div className={classes.navbarCtn}>
             <div className={classes.logo}>
-                <Link to="/">
+                <Link to="/#home">
             <span>[ kamára ]</span>
             </Link>
             </div>
