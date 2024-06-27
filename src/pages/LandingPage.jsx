@@ -109,11 +109,9 @@ const LandingPage = () => {
     <div className={classes.backgroundImage}>
      {/* <img src={landingPageImg} /> */}
     </div>
+   
     </div>
-{/* <Footer/> */}
-
-
-
+    <Footer/> 
     </>
    );
 }
