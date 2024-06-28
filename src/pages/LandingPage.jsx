@@ -62,8 +62,8 @@ const LandingPage = () => {
 
 
   const titles = [
-    {title:"Echoes",  headline:"[01] A JOURNEY INTO FUTURE REALMS", className:classes.titleLink},
     {title:"Odyssey", headline:"[02] ENCOUNTERS WITH THE UNKNOWN",className:classes.titleLink},
+    {title:"Echoes",  headline:"[01] A JOURNEY INTO FUTURE REALMS", className:classes.titleLink},
     {title:"Cracker", headline:"[03] THE SHADOW OF NEON REALITIES", className:classes.titleLink},
     {title:"Dystopia", headline:"[04] ECHOES OF A FALLEN WORLD", className:classes.titleLink},
   ];

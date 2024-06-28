@@ -1,15 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef } from "react";
 import classes from "../styles/echoes.module.css";
 import { Link } from "react-router-dom";
 import img1 from "../assets/echoes1.webp";
 import img2 from "../assets/echoes2.webp";
 import img3 from "../assets/echoes3.webp";
-import imgNextProject from "../assets/nextOdyssey.webp";
+import imgNextProject from "../assets/imgNextProjectCut.webp"
 import img7 from "../assets/echoes-7.jpg";
 import img9 from "../assets/echoes-8.jpg";
 import img8 from "../assets/echoes-9.jpg";
+import { useLocation } from "react-router-dom";
 
 const Echoes = () => {
+
+    const location = useLocation();
+    const containerRef = useRef(null);
+    const section01Ref = useRef(null);
+  
+    useEffect(() => {
+      const hash = location.hash;
+
+      setTimeout(() => {
+      if (hash === "#volume01" && section01Ref.current) {
+        section01Ref.current.scrollIntoView({ behavior: "smooth" });
+      }}, 20);
+    }, [location]); 
 
     return (
         <>
@@ -30,8 +44,10 @@ const Echoes = () => {
             </div>
         </div>
 
-            <div className={classes.container}>
-                <section className={`${classes.container} ${classes.section01}`}>
+            <div className={classes.container}ref={containerRef}>
+                <section className={`${classes.container} ${classes.section01}`}
+                ref={section01Ref}
+                id="volume01">
                     <div className={classes.headline}>
                     <h1>Echoes<br /></h1>
                     <h2>A Journey into Future Realms</h2>
@@ -88,11 +104,11 @@ const Echoes = () => {
                     </div>
                 </section>
                 <section className={`${classes.container} ${classes.section05}`}>
-                    <Link to="/odyssey#volume01" className={classes.nextProject}>
+                    <Link to="/cracker#volume01" className={classes.nextProject}>
                         <div className={classes.textNextProject}>
                             <div className={classes.headline}>  
-                            <h1>Odyssey</h1>
-                            <h2>Encounters with the Unknown</h2>
+                            <h1>Cracker</h1>
+                            <h2>THE SHADOW OF NEON REALITIES</h2>
                             </div>
                             <span className={classes.textNext}> [ Next Project &rarr; ]</span>
                         </div>

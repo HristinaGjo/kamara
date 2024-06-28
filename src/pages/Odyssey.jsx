@@ -8,7 +8,7 @@ import img3 from "../assets/odyssey-3.webp"
 import img4 from "../assets/odyssey4.webp"
 import img6 from "../assets/odyssey5.webp"
 import img5 from "../assets/odyssey6.webp"
-import imgNextProject from "../assets/imgNextProjectCut.webp"
+import imgNextProject from "../assets/echoes07.webp"
 
 
 const Odyssey = () => {
@@ -107,11 +107,11 @@ const Odyssey = () => {
                 </div>
             </section>
             <section className={`${classes.container} ${classes.section05}`}>
-          <Link to="/cracker#volume01" className={classes.nextProject}>
+          <Link to="/echoes#volume01" className={classes.nextProject}>
               <div className={classes.textNextProject}>
                 <div className={classes.headline}>
-                <h1>Cracker</h1>
-                <h2>A Journey into Future Realms</h2>
+                <h1>Echoes</h1>
+                <h2>A JOURNEY INTO FUTURE REALMS</h2>
                 </div>
                 <span className={classes.textNext}> [ Next Project &rarr; ]</span>
               </div>
