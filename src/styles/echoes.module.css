@@ -133,6 +133,10 @@
     height: 100%;
   }
 
+  .img .imgNextProject img{
+    object-fit: cover;
+  }
+
   .textNext{
     padding: 0;
     font-size: 20px;
@@ -296,6 +300,7 @@
     .imgNextProject img{
       width: 100%;
       height: 100%;
+      
     }
 
 }

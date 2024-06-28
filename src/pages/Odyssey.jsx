@@ -8,7 +8,7 @@ import img3 from "../assets/odyssey-3.webp"
 import img4 from "../assets/odyssey4.webp"
 import img6 from "../assets/odyssey5.webp"
 import img5 from "../assets/odyssey6.webp"
-import imgNextProject from "../assets/echoes07.webp"
+import imgNextProject from "../assets/echoes08.webp"
 
 
 const Odyssey = () => {

@@ -10,7 +10,7 @@ const About = () => {
         <div className={classes.navbarCtn}>
             <div className={classes.logo}>
                 <Link to="/">
-            <span>[ kamára ]</span>
+            <span>[ kamara ]</span>
             </Link>
             </div>
             <div className={classes.navbarRight}>
