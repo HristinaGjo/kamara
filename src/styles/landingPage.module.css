@@ -215,12 +215,17 @@
   line-height: 150%;
 }
 
+.spanTitle p{
+  font-size: 20px;
+}
+
 .spanHeadline{
   margin-bottom: 1em;
 }
 
 .spanHeadline p{
-  font-size:20px;
+  font-size:16px;
+  opacity: 0.5;
 }
 
 .titleItems:hover .backgroundImage {

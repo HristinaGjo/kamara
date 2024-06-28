@@ -100,7 +100,9 @@ const LandingPage = () => {
         > 
         <div className={classes.titleProjects}>
         <p className={classes.spanTitle}>{item.title}</p>
-          <p className={classes.spanHeadline}>{item.headline}</p>
+        <div className={classes.spanHeadline}>
+          <p>{item.headline}</p>
+        </div>
         </div>
         </div>
       ))}
