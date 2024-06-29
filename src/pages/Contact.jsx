@@ -27,7 +27,7 @@ const About = () => {
 
             <div className={classes.headline}>
                 <h1>Connect<br /></h1>
-                <h2>hello@ <br/>kamára.com</h2>
+                <h2>hello@ <br/>kamara.com</h2>
             </div>
             <div className={classes.textSpan}>
                         <span>social</span>
