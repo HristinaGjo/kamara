@@ -232,7 +232,7 @@
       width: 300vw;
     }
 
-    .section02 .img,
+   /* .section02 .img,
     .section04 .img {
         flex-wrap: nowrap; 
         overflow-x: auto; 
@@ -243,7 +243,17 @@
         flex: 0 0 auto;
         width: 32%;
         height: auto;
-    }
+    }*/
+    .section02 .img {
+      flex-wrap: nowrap; 
+      overflow-x: auto; 
+  }
+
+  .section02 .img img {
+      flex: 0 0 auto;
+      width: 32%;
+      height: auto;
+  } 
 
     .scroller{
       left: 1em;
