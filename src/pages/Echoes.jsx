@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import classes from "../styles/echoes.module.css";
 import { Link } from "react-router-dom";
-import img1 from "../assets/echoes1.webp";
+import img1 from "../assets/echoes07.webp";
 import img2 from "../assets/echoes2.webp";
 import img3 from "../assets/echoes3.webp";
 import imgNextProject from "../assets/imgNextProjectCut.webp"
@@ -68,15 +68,13 @@ const Echoes = () => {
                 </div> 
                 </section>
 
-                <section className={`${classes.container} ${classes.section04}`}>
+                <section className={`${classes.container} ${classes.section02}`}>
                     <div className={classes.img}>
-                        <img className={`${classes.img} ${classes.img01}`} src={img1} alt="image 1" />
-                       <img className={`${classes.img} ${classes.img02}`} src={img2} alt="image 2" /> 
-                      <img className={`${classes.img} ${classes.img03}`} src={img3} alt="image 3" /> 
+                        <img className={`${classes.img} ${classes.img07}`} src={img7} alt="image 7" />
+                        <img className={`${classes.img} ${classes.img08}`} src={img8} alt="image 8" />
+                        <img className={`${classes.img} ${classes.img09}`} src={img9} alt="image 9" />
                     </div>
                 </section>
-                
-         
 
                 <section className={`${classes.container} ${classes.section03}`}>
                 <div className={classes.headline}>
@@ -98,15 +96,14 @@ const Echoes = () => {
                 </div> 
                 </section>
 
-                <section className={`${classes.container} ${classes.section02}`}>
+                <section className={`${classes.container} ${classes.section04}`}>
                     <div className={classes.img}>
-                        <img className={`${classes.img} ${classes.img07}`} src={img7} alt="image 7" />
-                        <img className={`${classes.img} ${classes.img08}`} src={img8} alt="image 8" />
-                        <img className={`${classes.img} ${classes.img09}`} src={img9} alt="image 9" />
+                        <img className={`${classes.img} ${classes.img01}`} src={img1} alt="image 1" />
+                       {/* <img className={`${classes.img} ${classes.img02}`} src={img2} alt="image 2" /> 
+                      <img className={`${classes.img} ${classes.img03}`} src={img3} alt="image 3" />  */}
                     </div>
                 </section>
 
-          
                 <section className={`${classes.container} ${classes.section05}`}>
                     <Link to="/cracker#volume01" className={classes.nextProject}>
                         <div className={classes.textNextProject}>

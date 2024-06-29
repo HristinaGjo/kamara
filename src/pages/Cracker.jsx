@@ -6,7 +6,7 @@ import img1 from "../assets/cracker-1.webp"
 import img2 from "../assets/cracker3.webp"
 import img3 from "../assets/cracker-3.webp"
 import img5 from "../assets/cracker-5.webp"
-import imgNextProject from "../assets/nextWl.webp"
+import imgNextProject from "../assets/nextDystopia.webp"
 
 const Cracker = () => {
 
@@ -67,14 +67,16 @@ const Cracker = () => {
                         <span>[ scroll &rarr; ]</span>
                 </div> 
             </section>
-            <section className={`${classes.container} ${classes.section02}`}>
-                <div className={classes.img}>
-               {/* <img className={`${classes.img} ${classes.img01}`} src={img1} alt="image 1"/>*/}
-                    <img className={`${classes.img} ${classes.img02}`} src={img2} alt="image 2"/>
-                   {/* <img className={`${classes.img} ${classes.img03}`} src={img3} alt="image 3"/> */}
-          
+
+            <section className={`${classes.container} ${classes.section04}`}>
+            <div className={classes.img}>
+            <img className={`${classes.img} ${classes.img01}`} src={img3} alt="image 4"/>
+                <img className={`${classes.img} ${classes.img02}`} src={img5} alt="image 5"/>
+                <img className={`${classes.img} ${classes.img03}`} src={img1} alt="image 6"/>
                 </div>
             </section>
+
+          
             { /* <section className={`${classes.container} ${classes.section03}`}>
            <div className={classes.img}>
                     <img className={`${classes.img} ${classes.img04}`} src={img4} alt="image 4"/>
@@ -104,13 +106,16 @@ const Cracker = () => {
                 </div> 
             </section>
 
-            <section className={`${classes.container} ${classes.section04}`}>
-            <div className={classes.img}>
-            <img className={`${classes.img} ${classes.img01}`} src={img3} alt="image 4"/>
-                <img className={`${classes.img} ${classes.img02}`} src={img5} alt="image 5"/>
-                <img className={`${classes.img} ${classes.img03}`} src={img1} alt="image 6"/>
+            <section className={`${classes.container} ${classes.section02}`}>
+                <div className={classes.img}>
+               {/* <img className={`${classes.img} ${classes.img01}`} src={img1} alt="image 1"/>*/}
+                    <img className={`${classes.img} ${classes.img02}`} src={img2} alt="image 2"/>
+                   {/* <img className={`${classes.img} ${classes.img03}`} src={img3} alt="image 3"/> */}
+          
                 </div>
             </section>
+
+      
             <section className={`${classes.container} ${classes.section05}`}>
           <Link to="/dystopia#volume01" className={classes.nextProject}>
               <div className={classes.textNextProject}>

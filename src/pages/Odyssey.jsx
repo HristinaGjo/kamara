@@ -1,14 +1,14 @@
 import React, { useEffect, useRef } from "react";
-import classes from "../styles/echoes.module.css"
+import classes from "../styles/odyssey.module.css"
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import img1 from "../assets/odyssey-1.webp"
 import img2 from "../assets/odyssey-2.webp"
 import img3 from "../assets/odyssey-3.webp"
-import img4 from "../assets/odyssey4.webp"
+import img4 from "../assets/odyssey04.webp"
 import img6 from "../assets/odyssey5.webp"
 import img5 from "../assets/odyssey6.webp"
-import imgNextProject from "../assets/echoes08.webp"
+import imgNextProject from "../assets/imgNextEchoes.webp"
 
 
 const Odyssey = () => {
@@ -102,8 +102,8 @@ const Odyssey = () => {
             <section className={`${classes.container} ${classes.section04}`}>
             <div className={classes.img}>
             <img className={`${classes.img} ${classes.img01}`} src={img4} alt="image 4"/>
-                <img className={`${classes.img} ${classes.img02}`} src={img5} alt="image 5"/>
-                <img className={`${classes.img} ${classes.img03}`} src={img6} alt="image 6"/>
+               {/* <img className={`${classes.img} ${classes.img02}`} src={img5} alt="image 5"/> */}
+                {/* <img className={`${classes.img} ${classes.img03}`} src={img6} alt="image 6"/> */}
                 </div>
             </section>
             <section className={`${classes.container} ${classes.section05}`}>
