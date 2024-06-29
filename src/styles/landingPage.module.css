@@ -123,7 +123,7 @@
 
 /* Background size and opacity changes on hover */
 .titleItems:hover .backgroundImage {
-  background-size: 98vw;
+  background-size: 100vw;
   opacity: 0.4;
 }
 

@@ -65,6 +65,12 @@
     gap: 1em;
   }
 
+  .img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+  }
+
   .section01,
   .section03{
     display: grid;

@@ -1,133 +1,276 @@
-   .navbarCtn{
+.navbarCtn{
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  padding: 2em 2em;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  box-sizing: border-box;
+  z-index: 1;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Martian Mono", monospace;
+}
+
+.navbarRight{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 2em;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 500vw;
+  height: 98vh;
+  display: flex;
+  overflow-x: scroll; 
+}
+
+.scroller{
+  position: absolute;
+  position: absolute;
+  top: 98%;
+  left: 2em;
+  transform: translate(0%, -50%);
+  cursor: pointer;
+} 
+
+.scroller span {
+  font-size: 20px;
+}
+
+section{
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  padding: 6em 2em 0 2em;
+  display: flex;
+  gap: 2em;
+  overflow: hidden;
+}
+
+.img{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 1em;
+}
+
+.img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
+
+.section01,
+.section03{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: start;
+  gap: 10em;
+  width: 100%;
+}
+
+
+.textSpan{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 2em;
+  width: 100%;
+  line-height: 1.2;
+  font-size: 20px;
+  grid-column: 2;
+  box-sizing: border-box;
+  padding-left:2em ;
+  padding-right: 2em;
+}
+
+.section5{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+.headline{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.nextProject{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: start;
+}
+
+.textNextProject{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 2em;
+}
+
+.textNextProject span{
+  font-size: 16px;
+}
+
+.imgNextProject img{
+  width: 100%;
+  height: 100%;
+}
+
+.textNext{
+  padding: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.textScroll {
+  font-size: 16px;
+  margin-top: 2em;
+  text-transform: uppercase;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+h1{
+  text-transform: uppercase;
+}
+
+.scrollerMobile {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+
+  .navbarCtn{
     position: fixed;
     top: 0;
     width: 100vw;
-    padding: 2em 2em;
+    padding: 1.5em 1em 0 1em;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     box-sizing: border-box;
     z-index: 1;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-family: "Martian Mono", monospace;
+    font-size: 12px;
   }
   
   .navbarRight{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    gap: 2em;
+    gap: 1em;
   }
 
-  img{
+  .container h1 {
+    font-size: 3.815rem;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+  }
+
+  .container h2 {
+    font-size: 3.052rem;
+    width: 100%;
   }
 
   .container{
     position: relative;
     top: 0;
     left: 0;
-    width: 500vw;
-    height: 98vh;
+    width: 1000vw;
+    height: 97dvh;
     display: flex;
     overflow-x: scroll; 
   }
 
-  .scroller{
-    position: absolute;
-    position: absolute;
-    top: 98%;
-    left: 2em;
-    transform: translate(0%, -50%);
-    cursor: pointer;
-  } 
+  .headline{
+    width: 96%;
+  }
 
-  .scroller span {
-    font-size: 20px;
+  .textSpan{
+    font-size: 16px;
+    gap: 1em;
+    width: 96%;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   section{
-    position: relative;
-    width: 100vw;
-    height: 100%;
-    padding: 6em 2em 0 2em;
-    display: flex;
-    gap: 2em;
-    overflow: hidden;
-  }
-
-  .img{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    gap: 1em; 
-    align-items: center;
-  }
-
-  .img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
+    padding: 4em 1em 0 1em;
   }
 
   .section01,
   .section03{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    align-items: start;
-    gap: 10em;
-    width: 100%;
-  }
-
-  .section02{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    align-items: start;
-    width: 100%;
-  }
-
-  /*.section02,
-  .section04{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    align-items: start;
-    width: 100%;
-  }*/
-
-  .textSpan{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    gap: 2em;
-    width: 100%;
-    line-height: 1.2;
-    font-size: 20px;
-    grid-column: 2;
+    align-items: start;
+    gap: 1em;
     box-sizing: border-box;
-    padding-left:2em ;
-    padding-right: 2em;
+    padding: 4em 1em 0 1em;
+    width: 300vw;
   }
 
-  .section5{
+ /* .section02 .img,
+  .section04 .img {
+      flex-wrap: nowrap; 
+      overflow-x: auto; 
+  }
+
+  .section04 .img img {
+      flex: 0 0 auto;
+      width: 32%;
+      height: auto;
+  } */
+
+  .section02 .img,
+  .section04 .img  {
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+  }
+
+  .section04 .img img {
+    flex: 0 0 auto;
+    width: 32%;
+    height: auto;
+  } 
+
+  .scroller{
+    left: 1em;
+    top: 97%;
+  }
+
+  .section05 {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(1, 1fr);
     justify-content: center;
     align-items: center;
     gap: 0;
-  }
-
-  .headline{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
+    width: 30%; /* Adjust width as per your requirement */
   }
 
   .nextProject{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    width:auto;
+    display: flex;
+    flex-direction: column;
     justify-content: start;
+    align-items: start;
+    gap: 1em;
   }
 
   .textNextProject{
@@ -135,197 +278,29 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    gap: 2em;
+    margin-left: 0;
+    gap: 1em;
+    
   }
 
   .textNextProject span{
-    font-size: 16px;
-  }
+    font-size: 12px;
 
-  .imgNextProject img{
-    width: 100%;
-    height: 100%;
-  }
-
-  .img .imgNextProject img{
-    object-fit: cover;
-  }
-
-  .textNext{
-    padding: 0;
-    font-size: 20px;
-    text-transform: uppercase;
   }
 
   .textScroll {
-    font-size: 16px;
-    margin-top: 2em;
-    text-transform: uppercase;
-  }
-
-  ::-webkit-scrollbar {
     display: none;
   }
 
-  h1{
+  .scrollerMobile{
+    display: block;
     text-transform: uppercase;
+    font-size: 12px;
   }
 
-  .scrollerMobile {
-    display: none;
+  .spanTitle .spanHeadline {
+    font-weight: 600;
+    line-height: 120%;
   }
-
-
-  @media (max-width: 768px) {
- 
-    .navbarCtn{
-      position: fixed;
-      top: 0;
-      width: 100vw;
-      padding: 1.5em 1em 0 1em;
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      box-sizing: border-box;
-      z-index: 1;
-      font-size: 12px;
-    }
-    
-    .navbarRight{
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      gap: 1em;
-    }
-
-    .container h1 {
-      font-size: 3.815rem;
-      width: 100%;
-    }
-
-    .container h2 {
-      font-size: 3.052rem;
-      width: 100%;
-    }
-
-    .container{
-      position: relative;
-      top: 0;
-      left: 0;
-      width: 1000vw;
-      height: 97dvh;
-      display: flex;
-      overflow-x: scroll; 
-    }
-
-    .headline{
-      width: 96%;
-    }
-
-    .textSpan{
-      font-size: 16px;
-      gap: 1em;
-      width: 96%;
-      padding-left: 0;
-      padding-right: 0;
-    }
-
-    section{
-      padding: 4em 1em 0 1em;
-    }
-
-    .section01,
-    .section03{
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      align-items: start;
-      gap: 1em;
-      box-sizing: border-box;
-      padding: 4em 1em 0 1em;
-      width: 300vw;
-    }
-
-   /* .section02 .img,
-    .section04 .img {
-        flex-wrap: nowrap; 
-        overflow-x: auto; 
-    }
-
-    .section02 .img img,
-    .section04 .img img {
-        flex: 0 0 auto;
-        width: 32%;
-        height: auto;
-    } */
-
-    .section02 .img {
-        flex-wrap: nowrap; 
-        overflow-x: auto; 
-    }
-
-    .section02 .img img {
-        flex: 0 0 auto;
-        width: 32%;
-        height: auto;
-    } 
-
-    .scroller{
-      left: 1em;
-      top: 97%;
-    }
-
-    .section05 {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      justify-content: center;
-      align-items: center;
-      gap: 0;
-      width: 30%; /* Adjust width as per your requirement */
-    }
-  
-    .nextProject{
-      width:auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      align-items: start;
-      gap: 1em;
-    }
-
-    .textNextProject{
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      align-items: start;
-      margin-left: 0;
-      gap: 1em;
-      
-    }
-
-    .textNextProject span{
-      font-size: 12px;
-
-    }
-
-    .textScroll {
-      display: none;
-    }
-
-    .scrollerMobile{
-      display: block;
-      text-transform: uppercase;
-      font-size: 12px;
-    }
-
-    .spanTitle .spanHeadline {
-      font-weight: 600;
-      line-height: 120%;
-    }
-
-    .imgNextProject img{
-      width: 100%;
-      height: 100%;
-      
-    }
 
 }

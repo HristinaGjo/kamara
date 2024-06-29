@@ -1,12 +1,14 @@
 import React, { useEffect, useRef } from "react";
-import classes from "../styles/cracker.module.css"
+import classes from "../styles/echoes.module.css";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import img1 from "../assets/cracker-1.webp"
-import img2 from "../assets/cracker3.webp"
-import img3 from "../assets/cracker-3.webp"
-import img5 from "../assets/cracker-5.webp"
-import imgNextProject from "../assets/nextDystopia.webp"
+import img1 from "../assets/cracker-01.webp"
+import img2 from "../assets/cracker-02.webp"
+import img3 from "../assets/cracker-03.webp"
+import img4 from "../assets/cracker-04.webp"
+import img5 from "../assets/cracker-07.webp"
+import img6 from "../assets/cracker-06.webp"
+import imgNextProject from "../assets/dystopia-1.webp"
 
 const Cracker = () => {
 
@@ -68,15 +70,14 @@ const Cracker = () => {
                 </div> 
             </section>
 
-            <section className={`${classes.container} ${classes.section04}`}>
-            <div className={classes.img}>
-            <img className={`${classes.img} ${classes.img01}`} src={img3} alt="image 4"/>
-                <img className={`${classes.img} ${classes.img02}`} src={img5} alt="image 5"/>
-                <img className={`${classes.img} ${classes.img03}`} src={img1} alt="image 6"/>
+            <section className={`${classes.container} ${classes.section02}`}>
+                <div className={classes.img}>
+                <img className={`${classes.img} ${classes.img01}`} src={img1} alt="image 1"/>
+                    <img className={`${classes.img} ${classes.img02}`} src={img2} alt="image 2"/>
+                   <img className={`${classes.img} ${classes.img03}`} src={img3} alt="image 3"/> 
                 </div>
             </section>
 
-          
             { /* <section className={`${classes.container} ${classes.section03}`}>
            <div className={classes.img}>
                     <img className={`${classes.img} ${classes.img04}`} src={img4} alt="image 4"/>
@@ -106,12 +107,11 @@ const Cracker = () => {
                 </div> 
             </section>
 
-            <section className={`${classes.container} ${classes.section02}`}>
-                <div className={classes.img}>
-               {/* <img className={`${classes.img} ${classes.img01}`} src={img1} alt="image 1"/>*/}
-                    <img className={`${classes.img} ${classes.img02}`} src={img2} alt="image 2"/>
-                   {/* <img className={`${classes.img} ${classes.img03}`} src={img3} alt="image 3"/> */}
-          
+            <section className={`${classes.container} ${classes.section04}`}>
+            <div className={classes.img}>
+            <img className={`${classes.img} ${classes.img01}`} src={img4} alt="image 4"/>
+                <img className={`${classes.img} ${classes.img02}`} src={img5} alt="image 5"/>
+                <img className={`${classes.img} ${classes.img03}`} src={img6} alt="image 6"/>
                 </div>
             </section>
 

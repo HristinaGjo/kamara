@@ -75,13 +75,13 @@
     width: 100%;
   }
 
-  .section02{
+  .section02,
+  .section04{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     align-items: start;
     width: 100%;
   }
-
 
   .textSpan{
     display: flex;
@@ -232,7 +232,7 @@
       width: 300vw;
     }
 
-   /* .section02 .img,
+   .section02 .img,
     .section04 .img {
         flex-wrap: nowrap; 
         overflow-x: auto; 
@@ -243,17 +243,7 @@
         flex: 0 0 auto;
         width: 32%;
         height: auto;
-    }*/
-    .section02 .img {
-      flex-wrap: nowrap; 
-      overflow-x: auto; 
-  }
-
-  .section02 .img img {
-      flex: 0 0 auto;
-      width: 32%;
-      height: auto;
-  } 
+    }
 
     .scroller{
       left: 1em;
@@ -266,7 +256,7 @@
       justify-content: center;
       align-items: center;
       gap: 0;
-      width: 30%; /* Adjust width as per your requirement */
+      width: 30%; 
     }
   
     .nextProject{
@@ -311,7 +301,6 @@
     .imgNextProject img{
       width: 100%;
       height: 100%;
-      
     }
 
 }
