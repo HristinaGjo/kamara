@@ -2,8 +2,8 @@ import React, { useEffect, useRef } from "react";
 import classes from "../styles/odyssey.module.css";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import img1 from "../assets/odyssey-1.webp"
-import img2 from "../assets/odyssey04.webp"
+import img1 from "../assets/odyssey.webp"
+import img2 from "../assets/odyssey-1.webp"
 import img3 from "../assets/odyssey-3.webp"
 import img4 from "../assets/odyssey-01.webp"
 import img6 from "../assets/odyssey-02.webp"

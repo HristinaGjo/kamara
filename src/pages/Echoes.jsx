@@ -1,13 +1,13 @@
 import React, { useEffect, useRef } from "react";
 import classes from "../styles/echoes.module.css";
 import { Link } from "react-router-dom";
-import img1 from "../assets/echoes1.webp";
-import img2 from "../assets/echoes2.webp";
-import img3 from "../assets/echoes3.webp";
+import img1 from "../assets/echoes-13.webp";
+import img2 from "../assets/echoes-10.webp";
+import img3 from "../assets/echoes-12.webp";
 import imgNextProject from "../assets/imgNextProjectCut.webp"
 import img7 from "../assets/echoes-7.jpg";
 import img9 from "../assets/echoes-8.jpg";
-import img8 from "../assets/echoes-9.jpg";
+import img8 from "../assets/echoes-14.webp";
 import { useLocation } from "react-router-dom";
 
 const Echoes = () => {
